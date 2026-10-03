@@ -1,67 +1,42 @@
-<!-- <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=008036&height=120&section=header"/> -->
+# Victor Silva Lopes
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Inter&size=50&pause=1000&color=FEFEFE&center=true&vCenter=true&width=1000&height=90&lines=%F0%9F%91%8B+Hello%2C+I'm+Victor+Silva;I'm+a+Full-Stack+Developer+%F0%9F%92%BB;%F0%9F%A7%90+I'm+a+Systems+Analyst+at+PUC-PR)](https://git.io/typing-svg)
+**Analista de Sistemas | Oracle SQL/PL/SQL | Sustentação N2/N3 | Soul MV e aplicações hospitalares**
 
-<div align="center">  
-<a href="https://www.instagram.com/lopesvictorsilva/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-EC2E2C?style=for-the-badge&logo=instagram&logoColor=white"</a>
-<a href="https://www.linkedin.com/in/victor-silva-lopes-b659b11a3/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-0961B8?style=for-the-badge&logo=linkedin&logoColor=white"</a>
-</div>
+Trabalho com sustentação de sistemas em ambiente hospitalar e desenvolvimento de aplicações. Meu foco é investigar problemas, apoiar a continuidade das operações e construir soluções com regras claras e documentação útil.
+
+## Experiência e tecnologias
+
+- **Sistemas hospitalares:** Soul MV, atendimento N2/N3 e suporte aos módulos utilizados pelas equipes.
+- **Banco de dados:** Oracle SQL/PL/SQL; MySQL e MongoDB em projetos de desenvolvimento.
+- **Desenvolvimento freelancer:** APIs com Node.js e Express.
+- **Projeto em desenvolvimento:** sistema para clínicas com React e PostgreSQL.
+- **Infraestrutura de apoio:** servidores, redes e backups no contexto da sustentação de sistemas.
+
+## Projetos
+
+### [Controle Pessoal](https://github.com/Bitoterror0/controle-pessoal)
+
+Aplicativo web de controle financeiro pessoal. As melhorias propostas incluem categorias e filtro mensal, resumo escrito ou falado, contas recorrentes e exportação para agenda em `.ics`.
+
+A revisão trata validação de entradas, falhas de armazenamento, conflitos entre abas e preservação de dados. Há 34 grupos de testes automatizados da lógica. Leitores de tela, voz em dispositivos reais, agendas externas e serviço remoto real ainda precisam de validação. A exportação `.ics` é uma cópia da agenda, sem sincronização dos pagamentos.
+
+## Formação
+
+- **UNINOVE:** bacharelado em Sistemas de Informação — em andamento.
+- **PUCPR:** pós-graduação em Desenvolvimento de Software — em andamento; término previsto em janeiro de 2027.
+- **Anhembi Morumbi:** tecnólogo em Segurança da Informação — concluído.
+- **CS50x:** estudos pelo curso online; sem certificado.
+
+## Objetivo profissional
+
+Busco oportunidades em análise e sustentação de sistemas e desenvolvimento, em bancos, organizações de saúde e empresas internacionais. Aceito trabalho remoto a partir do Brasil e avalio posições híbridas conforme a localização, nas modalidades CLT ou PJ. Meu inglês é intermediário e estou aprimorando a comunicação em entrevistas técnicas.
+
+**[LinkedIn](https://www.linkedin.com/in/victor-silva-lopes/)**
 
 ---
-<br/>
-  
-## Main skills:
-![Vue](https://img.shields.io/badge/Vue-0D1117?style=for-the-badge&logo=vue.js)&nbsp;
-![PHP](https://img.shields.io/badge/PHP-0D1117?style=for-the-badge&logo=php&textColor=0D1117)&nbsp;
-![Laravel](https://img.shields.io/badge/Laravel-0D1117?style=for-the-badge&logo=laravel&textColor=0D1117)&nbsp;
 
+### English overview
 
-![HTML](https://img.shields.io/badge/HTML-0D1117?style=for-the-badge&logo=html5)&nbsp;
-![Sass](https://img.shields.io/badge/Sass-0D1117?style=for-the-badge&logo=sass)&nbsp;
-![Jest](https://img.shields.io/badge/Jest-0D1117?style=for-the-badge&logo=jest)&nbsp;
-![StoryBook](https://img.shields.io/badge/StoryBook-0D1117?style=for-the-badge&logo=storybook)&nbsp;
-![WebPack](https://img.shields.io/badge/WebPack-0D1117?style=for-the-badge&logo=webpack)&nbsp;
-![Bootstrap](https://img.shields.io/badge/Bootstrap-0D1117?style=for-the-badge&logo=bootstrap)&nbsp;
-![Firebase](https://img.shields.io/badge/Firebase-0D1117?style=for-the-badge&logo=firebase)&nbsp;
-![Vuex](https://img.shields.io/badge/Vuex-0D1117?style=for-the-badge&logo=vuex)&nbsp;
-![MySQL](https://img.shields.io/badge/MySQL-0D1117?style=for-the-badge&logo=mysql)&nbsp;
+Systems Analyst with experience in hospital applications, Oracle SQL/PL/SQL, Soul MV and N2/N3 application support. My freelance work includes Node.js/Express APIs with MongoDB and MySQL. A clinic management project using React and PostgreSQL is in development.
 
-
-## Tools:
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0D1117?style=for-the-badge&logo=visual-studio-code&logoColor=007ACC)&nbsp;
-![Git](https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git)&nbsp;
-![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github)&nbsp;
-![DockerHub](https://img.shields.io/badge/DockerHub-0D1117?style=for-the-badge&logo=dockerhub)&nbsp;
-![Linux](https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux)&nbsp;
-![microsoft-office](https://img.shields.io/badge/microsoft_office-0D1117?style=for-the-badge&logo=microsoft-office)&nbsp;
-![Trello](https://img.shields.io/badge/trello-0D1117?style=for-the-badge&logo=trello)&nbsp;
-  
-## Studying:
-<div align="center"><br>
-
-  <img align="center" alt="Ubuntu" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white">
-  <img align="center" alt="VSCode" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
-  <img align="center" alt="Eclipse" src="https://img.shields.io/badge/Eclipse-2C2255?style=for-the-badge&logo=eclipse&logoColor=white">
-  <img align="center" alt="Git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white">
-  <img align="center" alt="GitHub" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
-  <img align="center" alt="HTML" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img align="center" alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img align="center" alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <img align="center" alt="Js" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
-  <img align="center" alt="Typescript" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
-  <img align="center" alt="React" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img align="center" alt="ReactNative" src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-  <img align="center" alt="NodeJS" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white">
-  <img align="center" alt="MongoDB" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
-  <img align="center" alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
-  <img align="center" alt="Postgresql" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white">
-  <img align="center" alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
-  <img align="center" alt="Laravel" src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white">
-  <img align="center" alt="Elixir" src="https://img.shields.io/badge/Elixir-4B275F?style=for-the-badge&logo=elixir&logoColor=white">
- </div>
-
-<br/>
-
-
-
-<!-- <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=008036&height=120&section=footer"/> -->
+I am interested in systems support and development opportunities with banks, healthcare organizations and international companies, including remote work from Brazil. My English is intermediate, and I am improving my technical interview communication.
