@@ -1,0 +1,67 @@
+Victor Silva Lopes
+
+Systems Analyst | Application Support | Oracle SQL/PLSQL
+
+LinkedIn: linkedin.com/in/victor-silva-lopes
+
+GitHub: github.com/Bitoterror0 | Brasil
+
+Professional summary
+
+Systems analyst with experience supporting hospital applications, handling L2/L3 support requests, and developing Oracle SQL/PLSQL queries and routines. Work includes incident investigation, system configuration, and support for clinical and administrative teams. Additional experience in IT support, internal audit, and freelance back-end development. Interested in systems analysis and application support roles.
+
+Core skills
+
+Oracle SQL/PLSQL; L2/L3 application support; incident investigation; reporting; Soul MV; servers, networks and backups; Node.js and Express.
+
+Experience
+
+Santa Casa de Misericórdia de Ribeirão Preto
+
+Aug 2025 - present | Systems Analyst II since Sep 2026
+
+- Support and configure Soul MV hospital applications; handle L2/L3 requests, investigate incidents, and guide users.
+
+- Develop SQL queries, reports, and Oracle PL/SQL routines for clinical and administrative teams.
+
+- Work with PEP Web, Report Web Designer, Controle de Salas, and CAS/SSO; perform server, network, and backup maintenance.
+
+Freelance | Back-end Developer
+
+Jan 2021 - present
+
+- Develop APIs using Node.js and Express with MongoDB and MySQL integration. Currently developing a clinic management project with React and PostgreSQL.
+
+Grupo DPSP | Internal audit and administrative activities
+
+Oct 2023 - Sep 2025 | Junior Internal Auditor since Mar 2025
+
+- Supported process reviews, risk identification, reporting, and follow-up of corrective actions. Performed document-related activities for the Farmácia Popular program.
+
+Brazilian Army | Systems analysis and IT support activities
+
+Mar 2021 - Mar 2023
+
+- Handled support requests and diagnosed hardware, software, and network issues; configured equipment, maintained technical documentation, and guided users.
+
+Selected projects
+
+- Personal Finance: HTML/CSS/JavaScript application with local storage and speech synthesis. Monthly categories and recurring bills are under review in pull request 1.
+
+- React and Firebase: academic sign-up and login application with Authentication and Firestore. DevOps study includes Flask, Docker, Python, SQL/PLSQL and GitHub Actions.
+
+- Clinic management: React and PostgreSQL project in development. Implementation is not yet available in the public catalog.
+
+Education
+
+PUCPR - Postgraduate program in Software Development | In progress; expected completion Jan 2027.
+
+UNINOVE - Bachelor's degree in Information Systems | In progress; expected Nov 2027.
+
+Universidade Anhembi Morumbi - Brazilian undergraduate technology degree (Tecnólogo) in Information Security | Completed in 2023.
+
+CS50x - Online course studies; no certificate.
+
+Languages and work preferences
+
+Intermediate English. Open to remote work from Brazil and hybrid roles depending on location; employment or contractor arrangements.

@@ -1,0 +1,73 @@
+Victor Silva Lopes
+
+Analista de Sistemas II | Oracle SQL/PLSQL | Sustentação N2/N3
+
+LinkedIn: linkedin.com/in/victor-silva-lopes
+
+GitHub: github.com/Bitoterror0 | Brasil
+
+Resumo profissional
+
+Analista de sistemas em ambiente hospitalar, com atuação em Soul MV, sustentação N2/N3 e desenvolvimento de consultas, relatórios e rotinas em Oracle SQL/PLSQL. Experiência com servidores, redes e backups, além de auditoria interna e suporte de TI. Desde 2021, desenvolvo APIs como freelancer com Node.js e Express, integradas a MongoDB e MySQL. Busco oportunidades em análise e sustentação de aplicações e desenvolvimento, em saúde, bancos e empresas internacionais.
+
+Competências
+
+Oracle SQL/PLSQL; Soul MV; PEP Web; Report Web Designer; Controle de Salas; CAS/SSO; suporte N2/N3; incidentes; Node.js; Express; MongoDB; MySQL; redes, servidores e backup.
+
+Experiência
+
+Santa Casa de Misericórdia de Ribeirão Preto
+
+Ago/2025 - atual | Analista de Sistemas II desde Set/2026
+
+- Sustentação e parametrização de aplicações hospitalares Soul MV; atendimento N2/N3, investigação de incidentes e orientação aos usuários.
+
+- Desenvolvimento de consultas SQL, relatórios e rotinas em Oracle PL/SQL para áreas assistenciais e administrativas.
+
+- Atuação com PEP Web, Report Web Designer, Controle de Salas e CAS/SSO, além de manutenção de servidores, rede e backups.
+
+Freelance | Desenvolvedor Back-end
+
+Jan/2021 - atual
+
+- Desenvolvimento de APIs com Node.js e Express e integração com MongoDB e MySQL. Projeto de gestão para clínicas em desenvolvimento com React e PostgreSQL.
+
+Grupo DPSP | Auditoria interna e atividades administrativas
+
+Out/2023 - Set/2025 | Auditor Interno Júnior desde Mar/2025
+
+- Apoio à revisão de processos, identificação de riscos, elaboração de relatórios e acompanhamento de ações corretivas. Atividades documentais ligadas ao programa Farmácia Popular.
+
+Exército Brasileiro | Atuação em análise de sistemas e suporte de TI
+
+Mar/2021 - Mar/2023
+
+- Atendimento de chamados e diagnóstico de problemas de hardware, software e rede; configuração de equipamentos, documentação técnica e orientação aos usuários.
+
+Experiências anteriores
+
+2017 - 2019
+
+- Atividades de apoio em governança de TI no setor público (Ago/2018 - Mar/2019). Jovem aprendiz na IBRASA e suporte de TI na Ricoy (Jun/2017 - Jul/2018), conforme histórico profissional.
+
+Projetos selecionados
+
+- Controle Pessoal: aplicação HTML/CSS/JavaScript com armazenamento local e síntese de voz. Categorias, filtro mensal, contas recorrentes e ICS estão em revisão no PR #1.
+
+- React e Firebase: atividade acadêmica com cadastro, login, Authentication e Firestore. DevOps: estudo com API Flask, Docker, Python, SQL/PLSQL e GitHub Actions.
+
+- Sistema para clínicas: projeto em desenvolvimento com React e PostgreSQL. Implementação ainda não disponibilizada no catálogo público.
+
+Formação
+
+PUCPR - Pós-graduação em Desenvolvimento de Software | Em andamento; previsão de término Jan/2027.
+
+UNINOVE - Bacharelado em Sistemas de Informação | Em andamento; previsão: Nov/2027.
+
+Universidade Anhembi Morumbi - Tecnólogo em Segurança da Informação | Concluído em 2023.
+
+CS50x - Estudos pelo curso online; sem certificado.
+
+Idioma e disponibilidade
+
+Inglês intermediário. Disponível para remoto a partir do Brasil e híbrido conforme localização; CLT ou PJ.

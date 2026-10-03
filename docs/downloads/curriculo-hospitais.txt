@@ -1,0 +1,57 @@
+Victor Silva Lopes
+
+Analista de Sistemas | Sustentação Hospitalar | Soul MV e Oracle SQL/PL/SQL
+
+LinkedIn: linkedin.com/in/victor-silva-lopes
+
+GitHub: github.com/Bitoterror0 | Brasil
+
+Resumo profissional
+
+Analista de sistemas na Santa Casa de Misericórdia de Ribeirão Preto, com atuação em sustentação de aplicações hospitalares, Soul MV e suporte N2/N3. Desenvolvimento de consultas, relatórios e rotinas em Oracle SQL/PL/SQL para áreas assistenciais e administrativas. Experiência com parametrização de sistemas e infraestrutura em ambiente hospitalar de operação 24/7.
+
+Competências
+
+Soul MV; PEP Web; Report Web Designer; Controle de Salas; CAS/SSO; Oracle SQL/PL/SQL; suporte N2/N3; servidores, redes e backup.
+
+Experiência
+
+Santa Casa de Misericórdia de Ribeirão Preto
+
+Ago/2025 - atual | Analista de Sistemas II desde Set/2026
+
+- Sustentação e parametrização de aplicações hospitalares Soul MV; atendimento N2/N3, investigação de incidentes e orientação aos usuários.
+
+- Desenvolvimento de consultas SQL, relatórios e rotinas em Oracle PL/SQL para áreas assistenciais e administrativas.
+
+- Atuação com PEP Web, Report Web Designer, Controle de Salas e CAS/SSO, além de manutenção de servidores, rede e backups.
+
+Freelance | Desenvolvedor Back-end
+
+Jan/2021 - atual
+
+- Desenvolvimento de APIs com Node.js e Express e integração com MongoDB e MySQL. Projeto de gestão para clínicas em desenvolvimento com React e PostgreSQL.
+
+Grupo DPSP | Auditoria interna e atividades administrativas
+
+Out/2023 - Set/2025 | Auditor Interno Júnior desde Mar/2025
+
+- Apoio à revisão de processos, identificação de riscos, elaboração de relatórios e acompanhamento de ações corretivas. Atividades documentais ligadas ao programa Farmácia Popular.
+
+Exército Brasileiro | Atuação em análise de sistemas e suporte de TI
+
+Mar/2021 - Mar/2023
+
+- Atendimento de chamados e diagnóstico de problemas de hardware, software e rede; configuração de equipamentos, documentação técnica e orientação aos usuários.
+
+Formação
+
+PUCPR - Pós-graduação em Desenvolvimento de Software | Em andamento; previsão de término Jan/2027.
+
+UNINOVE - Bacharelado em Sistemas de Informação | Em andamento; previsão: Nov/2027.
+
+Universidade Anhembi Morumbi - Tecnólogo em Segurança da Informação | Concluído em 2023.
+
+Idioma e disponibilidade
+
+Inglês intermediário. Disponível para remoto a partir do Brasil e híbrido conforme localização; CLT ou PJ.

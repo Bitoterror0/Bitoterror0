@@ -1,0 +1,1817 @@
+{
+  "generated_on": "2026-10-03",
+  "owner": "Bitoterror0",
+  "public_repository_count": 18,
+  "scope": "15 repositórios públicos anteriores visíveis pela conexão GitHub, mais 3 repositórios públicos novos criados a pedido do usuário e confirmados por metadata, branch e README. Privados excluídos.",
+  "method": "Leitura de metadata, árvores não truncadas, README, dependências e arquivos de implementação selecionados. Nenhum código de repositório executado e nenhuma publicação.",
+  "excluded": "Repositórios privados inteiramente excluídos; nenhum nome/conteúdo privado consta aqui.",
+  "career_local_projects": "Projetos locais/do currículo serão integrados pelo assistente principal apenas com fonte fornecida.",
+  "repos": [
+    {
+      "name": "vitorsilva",
+      "full_name": "Bitoterror0/vitorsilva",
+      "url": "https://github.com/Bitoterror0/vitorsilva",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "d32119206148bd33cdf9c0ab29938e8425c35de5",
+      "tree_sha": "3b391a95b378f7167291413bbae79e9eb0891aea",
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo / workflow inicial",
+      "description": "README inicial e workflow GitHub Actions de exemplo que imprime Hello, world!.",
+      "tools": [
+        "GitHub Actions",
+        "YAML",
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "0c96deec0afbc3ea5b4f36a4ca3c5370b2f870d3",
+          "url": "https://github.com/Bitoterror0/vitorsilva/blob/d32119206148bd33cdf9c0ab29938e8425c35de5/README.md",
+          "claim": "Título inicial",
+          "content_read": true
+        },
+        {
+          "path": ".github/workflows/blank.yml",
+          "sha": "b2340b2446013a3326522c52871bacfd921f5dff",
+          "url": "https://github.com/Bitoterror0/vitorsilva/blob/d32119206148bd33cdf9c0ab29938e8425c35de5/.github/workflows/blank.yml",
+          "claim": "Workflow de exemplo",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/blank.yml",
+          "sha": "b2340b2446013a3326522c52871bacfd921f5dff",
+          "size": 307
+        },
+        {
+          "path": "README.md",
+          "sha": "0c96deec0afbc3ea5b4f36a4ca3c5370b2f870d3",
+          "size": 12
+        }
+      ],
+      "limitations": [
+        "Sem implementação de aplicação publicada; workflow starter não prova CI de aplicação."
+      ]
+    },
+    {
+      "name": "Bitoterror0",
+      "full_name": "Bitoterror0/Bitoterror0",
+      "url": "https://github.com/Bitoterror0/Bitoterror0",
+      "visibility": "public",
+      "default_branch": "main",
+      "head_sha": "6a9695da614fe9ab763c7bf956e9b25c1ed7c212",
+      "tree_sha": "8eb155b29609c5cb297916708fc825b069005f89",
+      "metadata_description": "Meu perfil profissional ",
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "perfil",
+      "description": "Perfil profissional BIT//VERSE com animação GIF, versões SVG/PNG e alternativa estática em Markdown.",
+      "tools": [
+        "Markdown",
+        "HTML em README",
+        "SVG",
+        "GIF",
+        "PNG"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "readme.md",
+          "sha": "c9ab1890c8ef012a200e912023450a22bab8df8a",
+          "url": "https://github.com/Bitoterror0/Bitoterror0/blob/6a9695da614fe9ab763c7bf956e9b25c1ed7c212/readme.md",
+          "claim": "Perfil e navegação",
+          "content_read": true
+        },
+        {
+          "path": "assets/bitverse/hero.svg",
+          "sha": "7b8bd0e90832da338b022f251f9f52e38b14cc3d",
+          "url": "https://github.com/Bitoterror0/Bitoterror0/blob/6a9695da614fe9ab763c7bf956e9b25c1ed7c212/assets/bitverse/hero.svg",
+          "claim": "Animação vetorial",
+          "content_read": false
+        },
+        {
+          "path": "PROFILE-STATIC.md",
+          "sha": "0a699a952b801761eadcf7d312dc251524678801",
+          "url": "https://github.com/Bitoterror0/Bitoterror0/blob/6a9695da614fe9ab763c7bf956e9b25c1ed7c212/PROFILE-STATIC.md",
+          "claim": "Alternativa sem animação",
+          "content_read": false
+        }
+      ],
+      "files": [
+        {
+          "path": "PROFILE-STATIC.md",
+          "sha": "0a699a952b801761eadcf7d312dc251524678801",
+          "size": 4002
+        },
+        {
+          "path": "assets/bitverse/DESIGN.md",
+          "sha": "d347aa814e27cf13f7cc2d14f18117282cccf0f1",
+          "size": 1584
+        },
+        {
+          "path": "assets/bitverse/data.svg",
+          "sha": "0eadade82b5ac4bbbdd20df3cb61f97964be1138",
+          "size": 1229
+        },
+        {
+          "path": "assets/bitverse/hero-static.png",
+          "sha": "eded150c0517e8c93f7d89aec1d243631e06f657",
+          "size": 147126
+        },
+        {
+          "path": "assets/bitverse/hero-static.svg",
+          "sha": "17a19d47ffefebd84e7dced92be1c52f617ac7e2",
+          "size": 8211
+        },
+        {
+          "path": "assets/bitverse/hero.gif",
+          "sha": "2f39361176c7f802b62d74c1e3b5ea369bca0af0",
+          "size": 310977
+        },
+        {
+          "path": "assets/bitverse/hero.svg",
+          "sha": "7b8bd0e90832da338b022f251f9f52e38b14cc3d",
+          "size": 8536
+        },
+        {
+          "path": "assets/bitverse/project.svg",
+          "sha": "7ee29d3ece69270daa7dcd5e12bdc167d949f3a2",
+          "size": 2325
+        },
+        {
+          "path": "assets/bitverse/software.svg",
+          "sha": "a9bacc5d022b092866a15402aae7c3d6e7c3fe3a",
+          "size": 1144
+        },
+        {
+          "path": "assets/bitverse/systems.svg",
+          "sha": "1f1df52d8ac9ce1d5bece7f1c8b8bdab9611dd1c",
+          "size": 1150
+        },
+        {
+          "path": "readme.md",
+          "sha": "c9ab1890c8ef012a200e912023450a22bab8df8a",
+          "size": 4235
+        }
+      ],
+      "limitations": [
+        "Perfil, não aplicação interativa."
+      ]
+    },
+    {
+      "name": "git-digital-course",
+      "full_name": "Bitoterror0/git-digital-course",
+      "url": "https://github.com/Bitoterror0/git-digital-course",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "9a40bf133e045a2a7a6bae93a5f13ea23806819a",
+      "tree_sha": "033983f6e859a00fdc8cace58f9292bb9c0f048b",
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo",
+      "description": "Anotações de curso de Git/versionamento com comandos push, pull e fetch.",
+      "tools": [
+        "Git",
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "c509b9abbae415bbf0d6767f2c51e46ff4f20a1a",
+          "url": "https://github.com/Bitoterror0/git-digital-course/blob/9a40bf133e045a2a7a6bae93a5f13ea23806819a/README.md",
+          "claim": "Anotações com comandos Git",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "size": 0
+        },
+        {
+          "path": "README.md",
+          "sha": "c509b9abbae415bbf0d6767f2c51e46ff4f20a1a",
+          "size": 291
+        },
+        {
+          "path": "TODO.md",
+          "sha": "f0720aae8d05493863ae76b1c9ab75769fb2e244",
+          "size": 26
+        }
+      ],
+      "limitations": [
+        "README mantém marcadores de conflito de merge.",
+        "Sem aplicação publicada."
+      ]
+    },
+    {
+      "name": "dio-trilha-java-basico",
+      "full_name": "Bitoterror0/dio-trilha-java-basico",
+      "url": "https://github.com/Bitoterror0/dio-trilha-java-basico",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "b110df9632f4ea917374dce76fe87c569ad18572",
+      "tree_sha": "66d47c1c5d5d4f8b7279473b57490c8da682bc0e",
+      "metadata_description": "Repositório para exemplos do curso de Java pela DIO",
+      "metadata_language": "Java",
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo",
+      "description": "Exemplo introdutório de curso Java DIO: classe TiposVariaveis com saída Hello, World!.",
+      "tools": [
+        "Java",
+        "Visual Studio Code (documentado)"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "f915264048f24f6de2ec11b64d9d85293ca09ff8",
+          "url": "https://github.com/Bitoterror0/dio-trilha-java-basico/blob/b110df9632f4ea917374dce76fe87c569ad18572/README.md",
+          "claim": "Curso DIO",
+          "content_read": true
+        },
+        {
+          "path": "tipos-variaveis/src/TiposVariaveis.java",
+          "sha": "33561127fda6aceae77067b6cfe2b658393d4a9a",
+          "url": "https://github.com/Bitoterror0/dio-trilha-java-basico/blob/b110df9632f4ea917374dce76fe87c569ad18572/tipos-variaveis/src/TiposVariaveis.java",
+          "claim": "Classe introdutória",
+          "content_read": true
+        },
+        {
+          "path": "tipos-variaveis/README.md",
+          "sha": "7c03a5324c7c44fcffc47e69d89a9d29c5e528b4",
+          "url": "https://github.com/Bitoterror0/dio-trilha-java-basico/blob/b110df9632f4ea917374dce76fe87c569ad18572/tipos-variaveis/README.md",
+          "claim": "README padrão VS Code Java",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "ec0c74320cc0ff701aea82f34176935c5899a073",
+          "size": 328
+        },
+        {
+          "path": "README.md",
+          "sha": "f915264048f24f6de2ec11b64d9d85293ca09ff8",
+          "size": 78
+        },
+        {
+          "path": "tipos-variaveis/README.md",
+          "sha": "7c03a5324c7c44fcffc47e69d89a9d29c5e528b4",
+          "size": 708
+        },
+        {
+          "path": "tipos-variaveis/src/TiposVariaveis.java",
+          "sha": "33561127fda6aceae77067b6cfe2b658393d4a9a",
+          "size": 145
+        }
+      ],
+      "limitations": [
+        "Não apresentar como sistema bancário completo ou domínio avançado de Java."
+      ]
+    },
+    {
+      "name": "devops-atividades-formativas",
+      "full_name": "Bitoterror0/devops-atividades-formativas",
+      "url": "https://github.com/Bitoterror0/devops-atividades-formativas",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "42de14c7907f5ba9732ff41845cd7ae6def5a0f3",
+      "tree_sha": "35d34874e0e4ae867326101122220bf360056d69",
+      "metadata_description": "Atividade PUCPR",
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo",
+      "description": "Atividade PUCPR com consulta SQL para tablespaces e procedimento PL/SQL de registro de acesso.",
+      "tools": [
+        "SQL",
+        "Oracle PL/SQL"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "7290e9f1a0fe717573a2c7a517d86a0d83e4f14c",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas/blob/42de14c7907f5ba9732ff41845cd7ae6def5a0f3/README.md",
+          "claim": "Atividade PUCPR",
+          "content_read": true
+        },
+        {
+          "path": "main",
+          "sha": "7356118b8b9c55899c075b52e10cbac30ad2a331",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas/blob/42de14c7907f5ba9732ff41845cd7ae6def5a0f3/main",
+          "claim": "Consulta de tablespaces",
+          "content_read": true
+        },
+        {
+          "path": "teste1",
+          "sha": "c5992c7f09f3268f3d2a4d964dd008f37dbf1277",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas/blob/42de14c7907f5ba9732ff41845cd7ae6def5a0f3/teste1",
+          "claim": "Procedimento de log de acesso",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "7290e9f1a0fe717573a2c7a517d86a0d83e4f14c",
+          "size": 47
+        },
+        {
+          "path": "main",
+          "sha": "7356118b8b9c55899c075b52e10cbac30ad2a331",
+          "size": 224
+        },
+        {
+          "path": "teste1",
+          "sha": "c5992c7f09f3268f3d2a4d964dd008f37dbf1277",
+          "size": 202
+        }
+      ],
+      "limitations": [
+        "Scripts não executados, compatibilidade/objetos de banco não validados."
+      ]
+    },
+    {
+      "name": "devops-atividades-formativas-1.1",
+      "full_name": "Bitoterror0/devops-atividades-formativas-1.1",
+      "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc",
+      "tree_sha": "d677e5d3d609d772e22cf70f8e1ca317d9353aff",
+      "metadata_description": "Atividade PUCPR",
+      "metadata_language": "Python",
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo com aplicação",
+      "description": "Atividade PUCPR com API de status Flask, automações Python, scripts SQL/PLSQL, Docker Alpine e pipeline GitHub Actions.",
+      "tools": [
+        "Python",
+        "Flask",
+        "Docker",
+        "Alpine Linux",
+        "SQL",
+        "Oracle PL/SQL",
+        "GitHub Actions",
+        "unittest",
+        "HTML",
+        "Bootstrap",
+        "Google Fonts"
+      ],
+      "apis_integrations": [
+        {
+          "name": "API própria Flask GET /",
+          "status": "rota JSON implementada no código; não executada neste inventário",
+          "evidence": "app.py"
+        },
+        {
+          "name": "jsDelivr / Bootstrap CDN",
+          "status": "CSS referenciado no HTML",
+          "evidence": "index.html"
+        },
+        {
+          "name": "Google Fonts",
+          "status": "CSS referenciado no HTML",
+          "evidence": "index.html"
+        }
+      ],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "2e52a5fa705399a1e962770c8e789dd0cc4e9aba",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/README.md",
+          "claim": "Contexto acadêmico",
+          "content_read": true
+        },
+        {
+          "path": "app.py",
+          "sha": "8229eec3f7c5aa3e539e82e41460025a064221d8",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/app.py",
+          "claim": "API GET /",
+          "content_read": true
+        },
+        {
+          "path": "Dockerfile",
+          "sha": "412cd327fc1c3cb4d40d4eb441703c6c109c5de9",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/Dockerfile",
+          "claim": "Python/Flask/Alpine e build",
+          "content_read": true
+        },
+        {
+          "path": "schema_hospital.sql",
+          "sha": "973d36f656e6c6df9e01dfe7563e0537b1bcdaa7",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/schema_hospital.sql",
+          "claim": "Tipos Oracle NUMBER/VARCHAR2",
+          "content_read": true
+        },
+        {
+          "path": "validador_seguranca.py",
+          "sha": "9d731a52965451e69ec396d820117f5af8b743d3",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/validador_seguranca.py",
+          "claim": "Scanner textual SQL",
+          "content_read": true
+        },
+        {
+          "path": "gerador_massa_dados.py",
+          "sha": "00d8275fa1e58683c826cfc9a64085af1c210e2b",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/gerador_massa_dados.py",
+          "claim": "Dados sintéticos",
+          "content_read": true
+        },
+        {
+          "path": "dashboard_saude.py",
+          "sha": "367c5f24ca7f79cbc53a36864e80364fb3589ed6",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/dashboard_saude.py",
+          "claim": "Dashboard de valores simulados",
+          "content_read": true
+        },
+        {
+          "path": ".github/workflows/main.yml",
+          "sha": "f710fb2e86eb23d7c0077a9609fd98a56fad5926",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/.github/workflows/main.yml",
+          "claim": "Pipeline Docker/Actions",
+          "content_read": true
+        },
+        {
+          "path": "test_hospital.py",
+          "sha": "02026e0d0aec87b87541cda2b5516a285712fbc4",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/test_hospital.py",
+          "claim": "Testes presentes, sem execução nesta leitura",
+          "content_read": true
+        },
+        {
+          "path": "index.html",
+          "sha": "5fde1f4fb9b60a15d56f830a89e09b529841f6f1",
+          "url": "https://github.com/Bitoterror0/devops-atividades-formativas-1.1/blob/2eb182cf4b2dae6eaf3961f1a560e3d857f76ccc/index.html",
+          "claim": "Bootstrap e fontes",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".github/workflows/main.yml",
+          "sha": "f710fb2e86eb23d7c0077a9609fd98a56fad5926",
+          "size": 1403
+        },
+        {
+          "path": ".gitignore",
+          "sha": "558a12594cfa9d2d760192feaaa54285dd4a0cf8",
+          "size": 504
+        },
+        {
+          "path": "Dockerfile",
+          "sha": "412cd327fc1c3cb4d40d4eb441703c6c109c5de9",
+          "size": 1292
+        },
+        {
+          "path": "LICENSE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "size": 11357
+        },
+        {
+          "path": "README.md",
+          "sha": "2e52a5fa705399a1e962770c8e789dd0cc4e9aba",
+          "size": 4526
+        },
+        {
+          "path": "app.py",
+          "sha": "8229eec3f7c5aa3e539e82e41460025a064221d8",
+          "size": 446
+        },
+        {
+          "path": "dashboard_saude.py",
+          "sha": "367c5f24ca7f79cbc53a36864e80364fb3589ed6",
+          "size": 815
+        },
+        {
+          "path": "documentacao_db.md",
+          "sha": "27ca2969de43bcbb779ecef1918e001bba529474",
+          "size": 436
+        },
+        {
+          "path": "gerador_massa_dados.py",
+          "sha": "00d8275fa1e58683c826cfc9a64085af1c210e2b",
+          "size": 1105
+        },
+        {
+          "path": "index.html",
+          "sha": "5fde1f4fb9b60a15d56f830a89e09b529841f6f1",
+          "size": 4471
+        },
+        {
+          "path": "inserts_teste.sql",
+          "sha": "847f6ebb63350d4b3c2146ef2b83284b07a766dc",
+          "size": 298
+        },
+        {
+          "path": "main.py",
+          "sha": "21f30cfb4ae02c669f4818d74964c3f425955eb3",
+          "size": 747
+        },
+        {
+          "path": "prc_finaliza_atendimento.sql",
+          "sha": "dddbd45f73275677d49e5261b63d61c9f4dd3041",
+          "size": 249
+        },
+        {
+          "path": "schema_hospital.sql",
+          "sha": "973d36f656e6c6df9e01dfe7563e0537b1bcdaa7",
+          "size": 249
+        },
+        {
+          "path": "test_hospital.py",
+          "sha": "02026e0d0aec87b87541cda2b5516a285712fbc4",
+          "size": 1320
+        },
+        {
+          "path": "validador_seguranca.py",
+          "sha": "9d731a52965451e69ec396d820117f5af8b743d3",
+          "size": 1210
+        },
+        {
+          "path": "view_estatisticas.sql",
+          "sha": "c19ad457e08d0e632b683478f8a7da3e5c8f7451",
+          "size": 181
+        }
+      ],
+      "limitations": [
+        "CPU/RAM e status do dashboard são simulados/literais.",
+        "A API retorna status e security_check literais; não comprova monitoramento real nem segurança aprovada.",
+        "Não comprova uso em produção, conexão ao Oracle real nem conformidade LGPD.",
+        "Testes existentes não equivalem a validação completa do sistema."
+      ]
+    },
+    {
+      "name": "relatorio-produtividade",
+      "full_name": "Bitoterror0/relatorio-produtividade",
+      "url": "https://github.com/Bitoterror0/relatorio-produtividade",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "a3e61a5da829752b2f944518742ceeef791e3864",
+      "tree_sha": "62c726c2888b8282a237f065c15c3af24068cd06",
+      "metadata_description": "Atividade para controle de trabalho dia-dia equipe",
+      "metadata_language": "JavaScript",
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "base / template em preparação",
+      "description": "Base declarativa de projeto para produtividade com manifesto TanStack/React/Vite e configurações; não há diretório src nem implementação funcional publicada nesta branch.",
+      "tools": [
+        "TypeScript (configuração)",
+        "React (dependência declarada)",
+        "TanStack Start/Router/Query (declarados)",
+        "Vite (declarado)",
+        "Tailwind CSS (declarado)",
+        "Radix UI (declarado)",
+        "Zod (declarado)",
+        "Bun (lock/config)",
+        "ESLint",
+        "Prettier",
+        "Vercel (configuração)",
+        "Cloudflare Workers (configuração)",
+        "Lovable (configuração)"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": {
+        "dependencies": {
+          "@cloudflare/vite-plugin": "^1.25.5",
+          "@hookform/resolvers": "^5.2.2",
+          "@radix-ui/react-accordion": "^1.2.12",
+          "@radix-ui/react-alert-dialog": "^1.1.15",
+          "@radix-ui/react-aspect-ratio": "^1.1.8",
+          "@radix-ui/react-avatar": "^1.1.11",
+          "@radix-ui/react-checkbox": "^1.3.3",
+          "@radix-ui/react-collapsible": "^1.1.12",
+          "@radix-ui/react-context-menu": "^2.2.16",
+          "@radix-ui/react-dialog": "^1.1.15",
+          "@radix-ui/react-dropdown-menu": "^2.1.16",
+          "@radix-ui/react-hover-card": "^1.1.15",
+          "@radix-ui/react-label": "^2.1.8",
+          "@radix-ui/react-menubar": "^1.1.16",
+          "@radix-ui/react-navigation-menu": "^1.2.14",
+          "@radix-ui/react-popover": "^1.1.15",
+          "@radix-ui/react-progress": "^1.1.8",
+          "@radix-ui/react-radio-group": "^1.3.8",
+          "@radix-ui/react-scroll-area": "^1.2.10",
+          "@radix-ui/react-select": "^2.2.6",
+          "@radix-ui/react-separator": "^1.1.8",
+          "@radix-ui/react-slider": "^1.3.6",
+          "@radix-ui/react-slot": "^1.2.4",
+          "@radix-ui/react-switch": "^1.2.6",
+          "@radix-ui/react-tabs": "^1.1.13",
+          "@radix-ui/react-toggle": "^1.1.10",
+          "@radix-ui/react-toggle-group": "^1.1.11",
+          "@radix-ui/react-tooltip": "^1.2.8",
+          "@tailwindcss/vite": "^4.2.1",
+          "@tanstack/react-query": "^5.83.0",
+          "@tanstack/react-router": "^1.168.25",
+          "@tanstack/react-start": "^1.167.50",
+          "@tanstack/router-plugin": "^1.167.28",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cmdk": "^1.1.1",
+          "date-fns": "^4.1.0",
+          "embla-carousel-react": "^8.6.0",
+          "input-otp": "^1.4.2",
+          "lucide-react": "^0.575.0",
+          "react": "^19.2.0",
+          "react-day-picker": "^9.14.0",
+          "react-dom": "^19.2.0",
+          "react-hook-form": "^7.71.2",
+          "react-resizable-panels": "^4.6.5",
+          "recharts": "^2.15.4",
+          "sonner": "^2.0.7",
+          "tailwind-merge": "^3.5.0",
+          "tailwindcss": "^4.2.1",
+          "tw-animate-css": "^1.3.4",
+          "vaul": "^1.1.2",
+          "vite-tsconfig-paths": "^6.0.2",
+          "zod": "^3.24.2"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.32.0",
+          "@lovable.dev/vite-tanstack-config": "^1.7.0",
+          "@types/node": "^22.16.5",
+          "@types/react": "^19.2.0",
+          "@types/react-dom": "^19.2.0",
+          "@vitejs/plugin-react": "^5.0.4",
+          "eslint": "^9.32.0",
+          "eslint-config-prettier": "^10.1.1",
+          "eslint-plugin-prettier": "^5.2.6",
+          "eslint-plugin-react-hooks": "^5.2.0",
+          "eslint-plugin-react-refresh": "^0.4.20",
+          "globals": "^15.15.0",
+          "prettier": "^3.7.3",
+          "typescript": "^5.8.3",
+          "typescript-eslint": "^8.56.1",
+          "vite": "^7.3.1"
+        }
+      },
+      "evidence": [
+        {
+          "path": "package.json",
+          "sha": "9e4366858f2a2d349dfc0ae55b537424fdcee734",
+          "url": "https://github.com/Bitoterror0/relatorio-produtividade/blob/a3e61a5da829752b2f944518742ceeef791e3864/package.json",
+          "claim": "Dependências declaradas",
+          "content_read": true
+        },
+        {
+          "path": "wrangler.jsonc",
+          "sha": "ebb5721c9fa8183ae5d141220409364a462a6a52",
+          "url": "https://github.com/Bitoterror0/relatorio-produtividade/blob/a3e61a5da829752b2f944518742ceeef791e3864/wrangler.jsonc",
+          "claim": "Worker aponta a src/server.ts inexistente na árvore",
+          "content_read": true
+        },
+        {
+          "path": "vercel.json",
+          "sha": "1323cdac34c6ae8f7e1f8a2f3adc299eae7bdcea",
+          "url": "https://github.com/Bitoterror0/relatorio-produtividade/blob/a3e61a5da829752b2f944518742ceeef791e3864/vercel.json",
+          "claim": "Rewrite",
+          "content_read": true
+        },
+        {
+          "path": "README.md",
+          "sha": "dc8ba5b0c1d944449132630a8f26c0dde2caeef8",
+          "url": "https://github.com/Bitoterror0/relatorio-produtividade/blob/a3e61a5da829752b2f944518742ceeef791e3864/README.md",
+          "claim": "Objetivo declarado",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".gitignore",
+          "sha": "d24df8a769e2bd7dd6839f2a51f9e0114d2023c5",
+          "size": 334
+        },
+        {
+          "path": ".prettierignore",
+          "sha": "be49b2655e2222e8a688f616a5c13500298801a0",
+          "size": 92
+        },
+        {
+          "path": ".prettierrc",
+          "sha": "90abee2393e79dff7ec36856c94f662a263f0107",
+          "size": 90
+        },
+        {
+          "path": "LICENSE",
+          "sha": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+          "size": 35149
+        },
+        {
+          "path": "README.md",
+          "sha": "dc8ba5b0c1d944449132630a8f26c0dde2caeef8",
+          "size": 77
+        },
+        {
+          "path": "_redirects",
+          "sha": "c86cc0ec998a01a24a0aef74d56c770f032b202d",
+          "size": 21
+        },
+        {
+          "path": "bun.lock",
+          "sha": "9df416394571c0e01e62916acb3c50d687302c97",
+          "size": 184050
+        },
+        {
+          "path": "bunfig.toml",
+          "sha": "a85c15869852cfb983d95855ad5573dd5e29401b",
+          "size": 280
+        },
+        {
+          "path": "components.json",
+          "sha": "f0817a84e832a693e7a79a911efe0b081bd97e06",
+          "size": 443
+        },
+        {
+          "path": "eslint.config.js",
+          "sha": "be4075bd5e14ae3e6420613f789c3fc8bbeda819",
+          "size": 1250
+        },
+        {
+          "path": "package.json",
+          "sha": "9e4366858f2a2d349dfc0ae55b537424fdcee734",
+          "size": 2907
+        },
+        {
+          "path": "tsconfig.json",
+          "sha": "533d40171d4cbc61370abbffca39ba9256ad5927",
+          "size": 672
+        },
+        {
+          "path": "vercel.json",
+          "sha": "1323cdac34c6ae8f7e1f8a2f3adc299eae7bdcea",
+          "size": 96
+        },
+        {
+          "path": "wrangler.jsonc",
+          "sha": "ebb5721c9fa8183ae5d141220409364a462a6a52",
+          "size": 202
+        }
+      ],
+      "limitations": [
+        "Bibliotecas declaradas não comprovam uso funcional/domínio.",
+        "Não há implementação de aplicação publicada nem API implementada na árvore.",
+        "Origem de template sugerida por tanstack_start_ts e @lovable.dev/vite-tanstack-config; fork=false é metadado, não prova autoria original."
+      ]
+    },
+    {
+      "name": "relatorio-produtividade1.1",
+      "full_name": "Bitoterror0/relatorio-produtividade1.1",
+      "url": "https://github.com/Bitoterror0/relatorio-produtividade1.1",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "db3672439ff107c5dff6b7601289609ca3d0363d",
+      "tree_sha": "0c106ad58de62e4e69b0a1f93f736edebdbf8ef5",
+      "metadata_description": "teste",
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "sem implementação publicada",
+      "description": "Repositório com README inicial apenas.",
+      "tools": [
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "00a96e6e5eea15bcb453149395bd890d3e73f56e",
+          "url": "https://github.com/Bitoterror0/relatorio-produtividade1.1/blob/db3672439ff107c5dff6b7601289609ca3d0363d/README.md",
+          "claim": "Título e palavra teste",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "00a96e6e5eea15bcb453149395bd890d3e73f56e",
+          "size": 35
+        }
+      ],
+      "limitations": [
+        "Sem implementação publicada."
+      ]
+    },
+    {
+      "name": "deploy",
+      "full_name": "Bitoterror0/deploy",
+      "url": "https://github.com/Bitoterror0/deploy",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": null,
+      "tree_sha": null,
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "vazio",
+      "description": "Repositório vazio, sem commits/código publicados.",
+      "tools": [],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [],
+      "files": [],
+      "limitations": [
+        "GitHub retornou 409 Git Repository is empty.",
+        "Sem implementação publicada."
+      ]
+    },
+    {
+      "name": "teste",
+      "full_name": "Bitoterror0/teste",
+      "url": "https://github.com/Bitoterror0/teste",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": null,
+      "tree_sha": null,
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "vazio",
+      "description": "Repositório vazio, sem commits/código publicados.",
+      "tools": [],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [],
+      "files": [],
+      "limitations": [
+        "GitHub retornou 409 Git Repository is empty.",
+        "Sem implementação publicada."
+      ]
+    },
+    {
+      "name": "teste00111",
+      "full_name": "Bitoterror0/teste00111",
+      "url": "https://github.com/Bitoterror0/teste00111",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": null,
+      "tree_sha": null,
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "vazio",
+      "description": "Repositório vazio, sem commits/código publicados.",
+      "tools": [],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [],
+      "files": [],
+      "limitations": [
+        "GitHub retornou 409 Git Repository is empty.",
+        "Sem implementação publicada."
+      ]
+    },
+    {
+      "name": "sistema-relatorios",
+      "full_name": "Bitoterror0/sistema-relatorios",
+      "url": "https://github.com/Bitoterror0/sistema-relatorios",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "2ba8a92ffd525a86ecbb374ea0b444e3e94f8444",
+      "tree_sha": "3f9ee2359a98ad3c2dacf68fa26bd60300957320",
+      "metadata_description": "sistema-relatorios",
+      "metadata_language": "HTML",
+      "fork": false,
+      "is_template": false,
+      "homepage": "https://sistema-relatorios-gamma.vercel.app",
+      "category": "protótipo / integração",
+      "description": "Página HTML que incorpora dashboard hospedado no Lovable via iframe; inclui schema SQL para relatórios. Há exemplo Supabase desativado em comentário.",
+      "tools": [
+        "HTML",
+        "CSS",
+        "iframe",
+        "SQL"
+      ],
+      "apis_integrations": [
+        {
+          "name": "Lovable",
+          "status": "dashboard externo incorporado via iframe; disponibilidade não testada",
+          "evidence": "index.html"
+        },
+        {
+          "name": "Supabase JavaScript SDK",
+          "status": "exemplo comentado/desativado; não apresentar como integração ativa",
+          "evidence": "index.html"
+        }
+      ],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "index.html",
+          "sha": "0f362f7ffefe4363943d101a867cecc42c327ed9",
+          "url": "https://github.com/Bitoterror0/sistema-relatorios/blob/2ba8a92ffd525a86ecbb374ea0b444e3e94f8444/index.html",
+          "claim": "Iframe ativo e exemplo Supabase comentado",
+          "content_read": true
+        },
+        {
+          "path": "relatorios",
+          "sha": "62568f7e95cd2262971a6f7b117ebd254f07ebac",
+          "url": "https://github.com/Bitoterror0/sistema-relatorios/blob/2ba8a92ffd525a86ecbb374ea0b444e3e94f8444/relatorios",
+          "claim": "Schema SQL",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": "index.html",
+          "sha": "0f362f7ffefe4363943d101a867cecc42c327ed9",
+          "size": 3321
+        },
+        {
+          "path": "relatorios",
+          "sha": "62568f7e95cd2262971a6f7b117ebd254f07ebac",
+          "size": 217
+        }
+      ],
+      "limitations": [
+        "O código interno do dashboard externo não está neste repositório.",
+        "A URL Vercel consta na metadata, mas não foi aberta/validada.",
+        "Não replicar tokens/identificadores de configuração do exemplo no perfil."
+      ]
+    },
+    {
+      "name": "sistema-relatorios2",
+      "full_name": "Bitoterror0/sistema-relatorios2",
+      "url": "https://github.com/Bitoterror0/sistema-relatorios2",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "66c78267bd2ca041a2c93cb2c384f9e21d1a07c3",
+      "tree_sha": "9e86b70768f7cf0fd4822d5a8bfe929424c81a10",
+      "metadata_description": null,
+      "metadata_language": null,
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "sem implementação publicada",
+      "description": "Repositório com README inicial e licença, sem código de aplicação.",
+      "tools": [
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "1944165632b54b8acb75e00cb4c5054ca340a6c6",
+          "url": "https://github.com/Bitoterror0/sistema-relatorios2/blob/66c78267bd2ca041a2c93cb2c384f9e21d1a07c3/README.md",
+          "claim": "Título inicial",
+          "content_read": true
+        },
+        {
+          "path": "LICENSE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "url": "https://github.com/Bitoterror0/sistema-relatorios2/blob/66c78267bd2ca041a2c93cb2c384f9e21d1a07c3/LICENSE",
+          "claim": "Licença Apache-2.0",
+          "content_read": false
+        }
+      ],
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+          "size": 11357
+        },
+        {
+          "path": "README.md",
+          "sha": "1944165632b54b8acb75e00cb4c5054ca340a6c6",
+          "size": 21
+        }
+      ],
+      "limitations": [
+        "Sem implementação publicada."
+      ]
+    },
+    {
+      "name": "react",
+      "full_name": "Bitoterror0/react",
+      "url": "https://github.com/Bitoterror0/react",
+      "visibility": "public",
+      "default_branch": "main",
+      "head_sha": "5c634153ef934f661e2b087c1c2b5e6d392ea953",
+      "tree_sha": "28da3f56c3b145be09d4d7657dbfaf504e55f674",
+      "metadata_description": "trabalhopuc",
+      "metadata_language": "JavaScript",
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "estudo com aplicação",
+      "description": "Atividade acadêmica React com cadastro, login e página de usuário, Firebase Authentication e Firestore; configuração de Firebase Hosting.",
+      "tools": [
+        "JavaScript",
+        "React",
+        "React DOM",
+        "React Router DOM",
+        "Firebase SDK",
+        "Vite",
+        "Oxlint",
+        "Firebase Hosting"
+      ],
+      "apis_integrations": [
+        {
+          "name": "Firebase Authentication",
+          "status": "chamadas implementadas no código; serviço real não testado",
+          "evidence": "src/pages/Cadastro.jsx; src/pages/Login.jsx; src/pages/Principal.jsx"
+        },
+        {
+          "name": "Cloud Firestore",
+          "status": "setDoc/getDoc implementados no código; serviço real não testado",
+          "evidence": "src/pages/Cadastro.jsx; src/pages/Principal.jsx"
+        },
+        {
+          "name": "Firebase Hosting",
+          "status": "configuração presente; publicação não testada",
+          "evidence": "firebase.json"
+        }
+      ],
+      "declared_dependencies": {
+        "dependencies": {
+          "firebase": "^12.15.0",
+          "react": "^19.2.7",
+          "react-dom": "^19.2.7",
+          "react-router-dom": "^7.18.0"
+        },
+        "devDependencies": {
+          "@types/react": "^19.2.17",
+          "@types/react-dom": "^19.2.3",
+          "@vitejs/plugin-react": "^6.0.2",
+          "oxlint": "^1.69.0",
+          "vite": "^8.1.0"
+        }
+      },
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "c8782ac69b3aa223dfdf570f7f18b15ff5c45276",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/README.md",
+          "claim": "Atividade somativa e estrutura",
+          "content_read": true
+        },
+        {
+          "path": "package.json",
+          "sha": "642f332ae1f64a9e75cf633f6319d7e65e277cbf",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/package.json",
+          "claim": "Dependências e ferramentas",
+          "content_read": true
+        },
+        {
+          "path": "src/pages/Cadastro.jsx",
+          "sha": "80b48d1ee52cd5a7504d4c7364deae7db0a5ce29",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/src/pages/Cadastro.jsx",
+          "claim": "Cadastro Auth e gravação Firestore",
+          "content_read": true
+        },
+        {
+          "path": "src/pages/Login.jsx",
+          "sha": "c4d67c743bf15d6bf038104b8a80e1f450dd11b9",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/src/pages/Login.jsx",
+          "claim": "Login",
+          "content_read": true
+        },
+        {
+          "path": "src/pages/Principal.jsx",
+          "sha": "2907a55b3143f005e06dda22614195eca1c0db43",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/src/pages/Principal.jsx",
+          "claim": "Sessão, leitura Firestore e logout",
+          "content_read": true
+        },
+        {
+          "path": "firebase.json",
+          "sha": "2c33c295fdba75d85be0211383765c20b8125ec0",
+          "url": "https://github.com/Bitoterror0/react/blob/5c634153ef934f661e2b087c1c2b5e6d392ea953/firebase.json",
+          "claim": "Hosting",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": ".agents/skills/firebase-ai-logic-basics/SKILL.md",
+          "sha": "802d45bc6e529be8ede3da091610ab118c455464",
+          "size": 6894
+        },
+        {
+          "path": ".agents/skills/firebase-ai-logic-basics/references/flutter_setup.md",
+          "sha": "59675140ea342a996df4184bdb40624955d308c1",
+          "size": 3091
+        },
+        {
+          "path": ".agents/skills/firebase-ai-logic-basics/references/ios_setup.md",
+          "sha": "a2052e24b04e5df619465d48a02cf2a8e601aabb",
+          "size": 4834
+        },
+        {
+          "path": ".agents/skills/firebase-ai-logic-basics/references/usage_patterns_android.md",
+          "sha": "404ff5ec08abff186a1fe1678b34309d9233e2e9",
+          "size": 4545
+        },
+        {
+          "path": ".agents/skills/firebase-ai-logic-basics/references/usage_patterns_web.md",
+          "sha": "470b6da4b3179a9907d7f169196f83aaa03ab8b8",
+          "size": 5450
+        },
+        {
+          "path": ".agents/skills/firebase-app-hosting-basics/SKILL.md",
+          "sha": "f88ada2600ca6b5190b5817d39925c579c8b9679",
+          "size": 2356
+        },
+        {
+          "path": ".agents/skills/firebase-app-hosting-basics/references/cli_commands.md",
+          "sha": "dc5c635fe877d6648f53d027520cdd23aeb14a70",
+          "size": 3217
+        },
+        {
+          "path": ".agents/skills/firebase-app-hosting-basics/references/configuration.md",
+          "sha": "c4621dadd2207bd488fc977a530863a5e70a5a5b",
+          "size": 1742
+        },
+        {
+          "path": ".agents/skills/firebase-app-hosting-basics/references/emulation.md",
+          "sha": "00b3c7913ef5a78715be66f1aa6131ff49364683",
+          "size": 1493
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/SKILL.md",
+          "sha": "32579fc262fc07be131bb3d51620f6e5304d37cb",
+          "size": 4168
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/references/client_sdk_android.md",
+          "sha": "9e4a8a43eaf4e6a49a650a997354f3140f395ebc",
+          "size": 4717
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/references/client_sdk_web.md",
+          "sha": "85c761da4a229f80d3beb0be09765608fafa6b09",
+          "size": 7670
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/references/flutter_setup.md",
+          "sha": "0901b2faa4f09548bc0ccb7ec34dbf6c3a8ad986",
+          "size": 5596
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/references/ios_setup.md",
+          "sha": "5a0d26713b88a66125dfb4542ba8ecfd0603e0d3",
+          "size": 2487
+        },
+        {
+          "path": ".agents/skills/firebase-auth-basics/references/security_rules.md",
+          "sha": "6f9815c2a3bd5004f54a8cc91be6e920109b0b32",
+          "size": 1309
+        },
+        {
+          "path": ".agents/skills/firebase-basics/SKILL.md",
+          "sha": "32ad6f15486ba89e0ba1593a758908538dd324dc",
+          "size": 7064
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/android_setup.md",
+          "sha": "c39d313d86549c41411b753e19b5774b202254dd",
+          "size": 1820
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/firebase-cli-guide.md",
+          "sha": "d25b916e979f6d179e0888e5c3bcfbe35f030321",
+          "size": 464
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/firebase-service-init.md",
+          "sha": "0b50c3344dbe294f26d9fee89f1ac2892c148e6c",
+          "size": 692
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/flutter_setup.md",
+          "sha": "0b7989eb109bd0d4aca3290116779b4342254f91",
+          "size": 4839
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/ios_setup.md",
+          "sha": "52bfd8303bd5b2bfd967be2b6be1b4dcf4e127c8",
+          "size": 4055
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/local-env-setup.md",
+          "sha": "c9853a8be028b3ccc0a114043e23d32940dd95fa",
+          "size": 2741
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/refresh/android_studio.md",
+          "sha": "91a6d276cd139dfcccfec8813927d3d7d9ab9ca7",
+          "size": 1311
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/refresh/antigravity.md",
+          "sha": "3437a20e08c2f1485fe18a9d3612fe0e412f757e",
+          "size": 2119
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/refresh/claude.md",
+          "sha": "5672d36312af14a4a39b3dca7c52f4cf12c23249",
+          "size": 380
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/refresh/gemini-cli.md",
+          "sha": "b43c334c144851b35f529c8a53899afcbbd7a432",
+          "size": 482
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/refresh/other-agents.md",
+          "sha": "90cbaef6c5ea8e79a6278fcbe0aeabb644c661f9",
+          "size": 2302
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/android_studio.md",
+          "sha": "02671bf3b9269a50e4abffe17609934695040423",
+          "size": 658
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/antigravity.md",
+          "sha": "36d33aca559c5dc11ffd1505f70c1d194a802686",
+          "size": 3398
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/claude_code.md",
+          "sha": "a0ec02e5a3e75db84c58f64411a72db30d427d1f",
+          "size": 1927
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/cursor.md",
+          "sha": "ad1e59e0aa54dcfe694e83ed1f1f14d673542d36",
+          "size": 3112
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/gemini_cli.md",
+          "sha": "657a51e4fe0d52a31a2a9cacc5dadf59050f0f47",
+          "size": 2037
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/github_copilot.md",
+          "sha": "c9b39c800143e29968c3d0b2f5ea2273a0a0edd0",
+          "size": 3428
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/setup/other_agents.md",
+          "sha": "73f61bc6b800fe1bd1bff85b1427f0a6b6448c99",
+          "size": 3486
+        },
+        {
+          "path": ".agents/skills/firebase-basics/references/web_setup.md",
+          "sha": "1ba2d1a8979b63166b3ae4a2d317f423829fcf61",
+          "size": 1675
+        },
+        {
+          "path": ".agents/skills/firebase-crashlytics/SKILL.md",
+          "sha": "0da6760522446dae83aa2148e472eedf06105f4d",
+          "size": 1679
+        },
+        {
+          "path": ".agents/skills/firebase-crashlytics/references/android_setup.md",
+          "sha": "f5025c35ab7f58ee3f43286a00f7e400636e22ac",
+          "size": 5169
+        },
+        {
+          "path": ".agents/skills/firebase-crashlytics/references/ios_setup.md",
+          "sha": "15365bb8f93223eb7613f820d8415f575dac3caa",
+          "size": 4556
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/SKILL.md",
+          "sha": "d87481a06b39607329a07c493ca45fa1a72c4db3",
+          "size": 9434
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/examples.md",
+          "sha": "b0521e231836efbc41b1c24c893d81c347c2ae3d",
+          "size": 14968
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/cloud_functions.md",
+          "sha": "6770dcb83cec217212ae2042f026aa59ba8349a2",
+          "size": 6111
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/config.md",
+          "sha": "8de81fac6d260debdb3ed7bac252eba618c72ba4",
+          "size": 6962
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/data_seeding.md",
+          "sha": "79d8db33030a0fadbfd4ae20eff2617e752185b5",
+          "size": 5925
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/native_sql.md",
+          "sha": "8c17f98dc2b129e41ac0d27020a2390cf6a419c6",
+          "size": 7066
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/operations.md",
+          "sha": "5b2e5741ce884dd930b1433e339e1873032b59f8",
+          "size": 11226
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/realtime.md",
+          "sha": "14526b3f294ac1929286af81f6f158333bfc87e0",
+          "size": 7738
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/schema.md",
+          "sha": "29f49ab3541c1d023e4e3e056260e8873c701921",
+          "size": 7622
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/sdk_admin_node.md",
+          "sha": "75b19c0021ab836fde6e42e9b3bcb344e85a41f9",
+          "size": 4202
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/sdk_android.md",
+          "sha": "848a5ad3d2792b6354d9f896bedaa0d2d0e62954",
+          "size": 3794
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/sdk_flutter.md",
+          "sha": "7a081112de39931cec0cdaf31a40b1562f224937",
+          "size": 3511
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/sdk_ios.md",
+          "sha": "a58f7eac2de4c3acb5b91862febbd6e8b38792eb",
+          "size": 4332
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/sdk_web.md",
+          "sha": "ce87f61a7f6a34b03cf3ba33b6db09e718237ca7",
+          "size": 4005
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/search.md",
+          "sha": "582d895f3a9393bfb9c14e9b75bd406b44cecae6",
+          "size": 8922
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/reference/security.md",
+          "sha": "11d5cfb10162fc56b6e494c0c767f198490f1230",
+          "size": 8944
+        },
+        {
+          "path": ".agents/skills/firebase-data-connect/templates.md",
+          "sha": "9a4912dc09d8b16c7d44c4fc67b426087acd7487",
+          "size": 7194
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/SKILL.md",
+          "sha": "ff6c4b90a6691d0fa591f9bee9d9b226e6ca1da6",
+          "size": 3928
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/android_sdk_usage.md",
+          "sha": "6c7b57bed2c6109fc5f1b21524b7a482dd9953e7",
+          "size": 8755
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/data_model.md",
+          "sha": "5f82bb5b8b769a47e66692e6b352fb0fc1d32b60",
+          "size": 2880
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/flutter_setup.md",
+          "sha": "b97a33371d80cdc728279b22dcb9dc548507a1e9",
+          "size": 4761
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/indexes.md",
+          "sha": "6c232e90842a4415fa6b493fe757098a5f342479",
+          "size": 4936
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/ios_setup.md",
+          "sha": "bb4a810b66f428096070b8cb45be47b836746da5",
+          "size": 5970
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/provisioning.md",
+          "sha": "718eb834c2bdec15eb07afc3070d92f5598ef5c7",
+          "size": 3257
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/python_sdk_usage.md",
+          "sha": "dd345e64a26b5d027fb5cfe916f5bd7141257f0d",
+          "size": 2946
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/security_rules.md",
+          "sha": "6f814e526dcd5daefb99efd2e8f15be0b9612507",
+          "size": 26681
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/enterprise/web_sdk_usage.md",
+          "sha": "04a18756559d4a44e68d97c2936485e1e95c7ef1",
+          "size": 4264
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/android_sdk_usage.md",
+          "sha": "5f3eca96bac6f59b030da9231c77447ffef31006",
+          "size": 5185
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/flutter_setup.md",
+          "sha": "d740094bc4ddbe491d33d6b93824a934a7bfa9da",
+          "size": 4612
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/indexes.md",
+          "sha": "2d41600422abdc286e0e14251625f59c7e1c326c",
+          "size": 4455
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/ios_setup.md",
+          "sha": "6ed9509fcc2cecc8d312b9b6ab09d4813e2d716c",
+          "size": 5376
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/provisioning.md",
+          "sha": "0d17968bcff1cb7d8a8eaa4e2165007829e5b2dd",
+          "size": 2901
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/security_rules.md",
+          "sha": "6f814e526dcd5daefb99efd2e8f15be0b9612507",
+          "size": 26681
+        },
+        {
+          "path": ".agents/skills/firebase-firestore/references/standard/web_sdk_usage.md",
+          "sha": "7b9007daa104d671e999d645422f06bc3acf82d8",
+          "size": 4547
+        },
+        {
+          "path": ".agents/skills/firebase-hosting-basics/SKILL.md",
+          "sha": "b45f985c200b08f771cf7434084cdf43d31e925b",
+          "size": 2140
+        },
+        {
+          "path": ".agents/skills/firebase-hosting-basics/references/configuration.md",
+          "sha": "36975a5dc2f07a987c5bee22c02e96aa3e0450fc",
+          "size": 1832
+        },
+        {
+          "path": ".agents/skills/firebase-hosting-basics/references/deploying.md",
+          "sha": "48fd8209c05f44cb4c950f4cc0028608080b01e5",
+          "size": 1201
+        },
+        {
+          "path": ".agents/skills/firebase-remote-config-basics/SKILL.md",
+          "sha": "16c266d3bf0eaf3d93de7655e120e059a17389f3",
+          "size": 4805
+        },
+        {
+          "path": ".agents/skills/firebase-remote-config-basics/references/android_setup.md",
+          "sha": "83540111c94d80e7b3abbac774bba332e4c86ea6",
+          "size": 3484
+        },
+        {
+          "path": ".agents/skills/firebase-remote-config-basics/references/ios_setup.md",
+          "sha": "897cef1b3a87ba214563f8e44e03cd88bc26a125",
+          "size": 2678
+        },
+        {
+          "path": ".agents/skills/firebase-security-rules-auditor/SKILL.md",
+          "sha": "5945963c9832de177ba58aef99f63c18501d287e",
+          "size": 3552
+        },
+        {
+          "path": ".agents/skills/xcode-project-setup/SKILL.md",
+          "sha": "612e93bc32d8e9ce8a31d5db9cef3205d3799ecc",
+          "size": 6069
+        },
+        {
+          "path": ".agents/skills/xcode-project-setup/scripts/xcode_spm_setup/.gitignore",
+          "sha": "1d9102abb5c43b2a1e1b642c59e4701148554c08",
+          "size": 153
+        },
+        {
+          "path": ".agents/skills/xcode-project-setup/scripts/xcode_spm_setup/Package.resolved",
+          "sha": "5a788601e5faaedc81889782f488faa12c05d763",
+          "size": 1076
+        },
+        {
+          "path": ".agents/skills/xcode-project-setup/scripts/xcode_spm_setup/Package.swift",
+          "sha": "40a4db53f200816b0af1d2de1ad6a3486f065856",
+          "size": 428
+        },
+        {
+          "path": ".agents/skills/xcode-project-setup/scripts/xcode_spm_setup/Sources/main.swift",
+          "sha": "d4ca68c465ff15f579040e5e1493e33092741b06",
+          "size": 9135
+        },
+        {
+          "path": ".firebaserc",
+          "sha": "27514fabf4eff060374b19a6aef1f31f462f35d9",
+          "size": 61
+        },
+        {
+          "path": ".gitignore",
+          "sha": "b17f6310755422d220e2c975ca4387ab465c95a0",
+          "size": 1210
+        },
+        {
+          "path": ".oxlintrc.json",
+          "sha": "1255078235d0ce4e80ac34866d5ce2af89aa6220",
+          "size": 231
+        },
+        {
+          "path": "README.md",
+          "sha": "c8782ac69b3aa223dfdf570f7f18b15ff5c45276",
+          "size": 2969
+        },
+        {
+          "path": "dist/assets/index-CPpPFOoJ.js",
+          "sha": "ef78309b608e8e9e128248d994d1266d14f937ff",
+          "size": 792917
+        },
+        {
+          "path": "dist/assets/index-Dl0Z5N7T.css",
+          "sha": "55b0482e23642bf3b6bcd69fec7e6ab9172637cf",
+          "size": 1455
+        },
+        {
+          "path": "dist/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3",
+          "size": 9522
+        },
+        {
+          "path": "dist/index.html",
+          "sha": "d0346b925b961b3f5a6276f95dfe40d354badbee",
+          "size": 492
+        },
+        {
+          "path": "firebase.json",
+          "sha": "2c33c295fdba75d85be0211383765c20b8125ec0",
+          "size": 234
+        },
+        {
+          "path": "index.html",
+          "sha": "d25a5af53892e7d0c94550c81d2235d2f1e4a95f",
+          "size": 394
+        },
+        {
+          "path": "package-lock.json",
+          "sha": "dfb38a80cc60b5b9fd720bb0caf0c2942da6c1f0",
+          "size": 85699
+        },
+        {
+          "path": "package.json",
+          "sha": "642f332ae1f64a9e75cf633f6319d7e65e277cbf",
+          "size": 529
+        },
+        {
+          "path": "public/favicon.svg",
+          "sha": "6893eb13237060adc0c968a690149a49faa2d7d3",
+          "size": 9522
+        },
+        {
+          "path": "skills-lock.json",
+          "sha": "8e0b1502fa9140d907cad90cfbff0774dbb31b3a",
+          "size": 2914
+        },
+        {
+          "path": "src/App.jsx",
+          "sha": "a1f1a587a567db0f3917beff95c7609968f9e761",
+          "size": 234
+        },
+        {
+          "path": "src/firebase/firebaseConfig.js",
+          "sha": "82620803f5dccc592ccfd55bca9a90270678509c",
+          "size": 1625
+        },
+        {
+          "path": "src/index.css",
+          "sha": "3899b6258e0abd28ac04ca1afceb5d74cd9892b9",
+          "size": 1861
+        },
+        {
+          "path": "src/main.jsx",
+          "sha": "b9a1a6deac8775b5598874b2bc3c7971d82cf211",
+          "size": 229
+        },
+        {
+          "path": "src/pages/Cadastro.jsx",
+          "sha": "80b48d1ee52cd5a7504d4c7364deae7db0a5ce29",
+          "size": 4062
+        },
+        {
+          "path": "src/pages/Login.jsx",
+          "sha": "c4d67c743bf15d6bf038104b8a80e1f450dd11b9",
+          "size": 2172
+        },
+        {
+          "path": "src/pages/Principal.jsx",
+          "sha": "2907a55b3143f005e06dda22614195eca1c0db43",
+          "size": 2436
+        },
+        {
+          "path": "src/routes/AppRoutes.jsx",
+          "sha": "d0ee4b0733717457887b4ec5702b7c8c6119ebb8",
+          "size": 538
+        },
+        {
+          "path": "vite.config.js",
+          "sha": "8b0f57b91aeb45c54467e29f983a0893dc83c4d9",
+          "size": 161
+        }
+      ],
+      "limitations": [
+        "Arquivos de skills Firebase existentes não comprovam uso de AI Logic, Data Connect, Crashlytics, Remote Config ou SDKs iOS/Android.",
+        "Nenhum cadastro/login real foi executado."
+      ]
+    },
+    {
+      "name": "controle-pessoal",
+      "full_name": "Bitoterror0/controle-pessoal",
+      "url": "https://github.com/Bitoterror0/controle-pessoal",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "db786388460d5aa81d82b914de2c576f92d15a96",
+      "tree_sha": "b377b1d5393aff151eea37244056b0b5e888be0e",
+      "metadata_description": "teste",
+      "metadata_language": "HTML",
+      "fork": false,
+      "is_template": false,
+      "homepage": null,
+      "category": "projeto",
+      "description": "Aplicação de finanças pessoais em HTML/CSS/JavaScript com entradas, saídas, saldo, armazenamento local, ajustes de leitura e síntese de voz.",
+      "tools": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "localStorage",
+        "Intl.NumberFormat",
+        "Web Speech API"
+      ],
+      "apis_integrations": [
+        {
+          "name": "Web Speech API",
+          "status": "implementada no código",
+          "evidence": "index.html"
+        },
+        {
+          "name": "Claude Artifact SDK (claude.use db/user)",
+          "status": "integração condicional no código; serviço real não validado",
+          "evidence": "index.html"
+        }
+      ],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "5f4ac0ae25a03c3d499d5db2eb27b860cefb510c",
+          "url": "https://github.com/Bitoterror0/controle-pessoal/blob/db786388460d5aa81d82b914de2c576f92d15a96/README.md",
+          "claim": "Escopo da versão principal",
+          "content_read": true
+        },
+        {
+          "path": "index.html",
+          "sha": "5b6fed49d52582ac432fd82e601061ef42c15363",
+          "url": "https://github.com/Bitoterror0/controle-pessoal/blob/db786388460d5aa81d82b914de2c576f92d15a96/index.html",
+          "claim": "Lógica local, Web Speech API e integração condicional SDK",
+          "content_read": true
+        }
+      ],
+      "files": [
+        {
+          "path": "README.md",
+          "sha": "5f4ac0ae25a03c3d499d5db2eb27b860cefb510c",
+          "size": 1305
+        },
+        {
+          "path": "index.html",
+          "sha": "5b6fed49d52582ac432fd82e601061ef42c15363",
+          "size": 23240
+        }
+      ],
+      "limitations": [
+        "Categorias, filtro mensal, contas recorrentes e exportação ICS estão no PR #1 aberto, não na versão master inventariada.",
+        "Acessibilidade em leitores de tela reais não foi testada neste inventário."
+      ]
+    },
+    {
+      "name": "sistema-clinicas",
+      "full_name": "Bitoterror0/sistema-clinicas",
+      "url": "https://github.com/Bitoterror0/sistema-clinicas",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "34d769e8119478c9321b181bbde1025682cbd958",
+      "tree_sha": "acc7722b286c06eb22bf0a5b6556f686bc88f47e",
+      "category": "sem implementação publicada",
+      "description": "Projeto pessoal de gestão para clínicas em preparação. Implementação será adicionada posteriormente; não utilizar dados reais de pacientes.",
+      "tools": [
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "df131f6e6355aa7a7cf159ff5d19365eebc41205",
+          "url": "https://github.com/Bitoterror0/sistema-clinicas/blob/master/README.md",
+          "claim": "Espaço criado em preparação; implementação será adicionada posteriormente.",
+          "content_read": true
+        }
+      ],
+      "limitations": [
+        "Criado a pedido do usuário em 03/10/2026. Somente README inicial; não representa aplicação concluída nem API em uso."
+      ]
+    },
+    {
+      "name": "laboratorio-apis",
+      "full_name": "Bitoterror0/laboratorio-apis",
+      "url": "https://github.com/Bitoterror0/laboratorio-apis",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "02da7d0dcbab63a5ac88837c586cdb5100513e72",
+      "tree_sha": "45ee1a70e08e998e604dbcf77faa5909b16ba832",
+      "category": "sem implementação publicada",
+      "description": "Espaço em preparação para estudos e projetos de APIs. Código e documentação serão adicionados posteriormente.",
+      "tools": [
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "528aa5d0eee2150964b46270d0fbfffd87818925",
+          "url": "https://github.com/Bitoterror0/laboratorio-apis/blob/master/README.md",
+          "claim": "Espaço criado em preparação; implementação será adicionada posteriormente.",
+          "content_read": true
+        }
+      ],
+      "limitations": [
+        "Criado a pedido do usuário em 03/10/2026. Somente README inicial; não representa aplicação concluída nem API em uso."
+      ]
+    },
+    {
+      "name": "automacoes-ti",
+      "full_name": "Bitoterror0/automacoes-ti",
+      "url": "https://github.com/Bitoterror0/automacoes-ti",
+      "visibility": "public",
+      "default_branch": "master",
+      "head_sha": "93062f812dfbf64f1d17cf3e02737abc027bca90",
+      "tree_sha": "55cf71decdad7606f5da37970a08622352516da9",
+      "category": "sem implementação publicada",
+      "description": "Espaço em preparação para automações de TI. Estudos, scripts e documentação serão adicionados posteriormente.",
+      "tools": [
+        "Markdown"
+      ],
+      "apis_integrations": [],
+      "declared_dependencies": null,
+      "evidence": [
+        {
+          "path": "README.md",
+          "sha": "aa7ae3eb87c820e6272b4ac9ce5c471c89e43f64",
+          "url": "https://github.com/Bitoterror0/automacoes-ti/blob/master/README.md",
+          "claim": "Espaço criado em preparação; implementação será adicionada posteriormente.",
+          "content_read": true
+        }
+      ],
+      "limitations": [
+        "Criado a pedido do usuário em 03/10/2026. Somente README inicial; não representa aplicação concluída nem API em uso."
+      ]
+    }
+  ]
+}
