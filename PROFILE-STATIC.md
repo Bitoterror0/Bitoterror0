@@ -1,10 +1,7 @@
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/bitverse/hero-static.png">
-  <img src="./assets/bitverse/hero.gif" width="1200" alt="BIT//VERSE. Victor Silva Lopes — Analista de Sistemas, Oracle SQL/PLSQL, sustentação N2/N3 e Soul MV. Uma órbita luminosa acompanha um portal com o monograma VL.">
-</picture>
+![Victor Silva Lopes — Analista de Sistemas, Oracle SQL/PLSQL, N2/N3 e Soul MV.](./assets/bitverse/hero-static.png)
 
 <p align="center">
-  <a href="./PROFILE-STATIC.md">◼ Perfil sem animação</a> &nbsp; · &nbsp;
+  <a href="./readme.md">↗ Voltar ao perfil animado</a> &nbsp; · &nbsp;
   <a href="https://www.linkedin.com/in/victor-silva-lopes/">↗ LinkedIn</a> &nbsp; · &nbsp;
   <a href="https://github.com/Bitoterror0/controle-pessoal/pull/1">↗ Projeto em revisão</a>
 </p>
