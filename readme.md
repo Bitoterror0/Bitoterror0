@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-reduced-motion: reduce)" srcset="./assets/bitverse/hero-static.png">
-  <img src="./assets/bitverse/hero.gif" width="1200" alt="BIT//VERSE. Victor Silva Lopes — Analista de Sistemas, Oracle SQL/PLSQL, sustentação N2/N3 e Soul MV. Uma órbita luminosa acompanha um portal com o monograma VL.">
+  <img src="./assets/bitverse/hero.gif" width="1000" alt="BIT//VERSE. Victor Silva Lopes — Analista de Sistemas, Oracle SQL/PLSQL, sustentação N2/N3 e Soul MV. Uma órbita luminosa acompanha um portal com o monograma VL.">
 </picture>
 
 <p align="center">
