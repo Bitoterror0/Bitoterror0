@@ -16,7 +16,7 @@ Trabalho com sustentação de sistemas em ambiente hospitalar e desenvolvimento 
 
 ### [Controle Pessoal](https://github.com/Bitoterror0/controle-pessoal)
 
-Aplicativo web de controle financeiro pessoal. As melhorias propostas incluem categorias e filtro mensal, resumo escrito ou falado, contas recorrentes e exportação para agenda em `.ics`.
+Aplicativo web de controle financeiro pessoal. [Melhorias propostas no PR #1](https://github.com/Bitoterror0/controle-pessoal/pull/1): categorias e filtro mensal, resumo escrito ou falado, contas recorrentes e exportação para agenda em `.ics`.
 
 A revisão trata validação de entradas, falhas de armazenamento, conflitos entre abas e preservação de dados. Há 34 grupos de testes automatizados da lógica. Leitores de tela, voz em dispositivos reais, agendas externas e serviço remoto real ainda precisam de validação. A exportação `.ics` é uma cópia da agenda, sem sincronização dos pagamentos.
 
