@@ -15,9 +15,9 @@ Sou **Victor Silva Lopes**, analista de sistemas em ambiente hospitalar. Trabalh
 
 ### Escolha um caminho
 
-<a href="#sistemas-hospitalares"><img src="./assets/bitverse/systems.svg" width="32%" alt="Sistemas hospitalares: Soul MV e sustentação N2/N3. Explorar experiência."></a>
-<a href="#dados-e-sustentação"><img src="./assets/bitverse/data.svg" width="32%" alt="Dados e sustentação: Oracle SQL/PLSQL e investigação de problemas. Explorar experiência."></a>
-<a href="#apis-e-software"><img src="./assets/bitverse/software.svg" width="32%" alt="APIs e software: Node.js, Express, MongoDB e MySQL. Explorar projetos."></a>
+<a href="#sistemas-hospitalares"><img src="./assets/bitverse/systems.svg" width="260" alt="Sistemas hospitalares: Soul MV e sustentação N2/N3. Explorar experiência."></a>
+<a href="#dados-e-sustentação"><img src="./assets/bitverse/data.svg" width="260" alt="Dados e sustentação: Oracle SQL/PLSQL e investigação de problemas. Explorar experiência."></a>
+<a href="#apis-e-software"><img src="./assets/bitverse/software.svg" width="260" alt="APIs e software: Node.js, Express, MongoDB e MySQL. Explorar projetos."></a>
 
 ### Um projeto para explorar
 
