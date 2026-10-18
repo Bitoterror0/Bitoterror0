@@ -11,10 +11,10 @@ Conecto a operação hospitalar ao desenvolvimento de soluções: investigo inci
 ## Acessos rápidos
 
 <p align="center">
-  <a href="#projetos-selecionados"><img src="assets/profile/banking/projetos.svg" width="180" alt="Projetos — explorar código e documentação"></a>
-  <a href="#experiência-e-foco"><img src="assets/profile/banking/experiencia.svg" width="180" alt="Experiência — conhecer trajetória e atuação"></a>
-  <a href="docs/downloads/curriculo-victor.pdf"><img src="assets/profile/banking/curriculo.svg" width="180" alt="Currículo — abrir PDF em português"></a>
-  <a href="https://www.linkedin.com/in/victor-silva-lopes/"><img src="assets/profile/banking/contato.svg" width="180" alt="Contato — conversar no LinkedIn"></a>
+  <a href="#projetos-selecionados"><img src="assets/profile/banking/projetos.svg" width="194" alt="Projetos — explorar código e documentação"></a>
+  <a href="#experiência-e-foco"><img src="assets/profile/banking/experiencia.svg" width="194" alt="Experiência — conhecer trajetória e atuação"></a>
+  <a href="docs/downloads/curriculo-victor.pdf"><img src="assets/profile/banking/curriculo.svg" width="194" alt="Currículo — abrir PDF em português"></a>
+  <a href="https://www.linkedin.com/in/victor-silva-lopes/"><img src="assets/profile/banking/contato.svg" width="194" alt="Contato — conversar no LinkedIn"></a>
 </p>
 
 [Projetos](#projetos-selecionados) · [Experiência](#experiência-e-foco) · [Currículo PT](docs/downloads/curriculo-victor.pdf) · [English résumé](docs/downloads/resume-international.pdf) · [LinkedIn](https://www.linkedin.com/in/victor-silva-lopes/)
