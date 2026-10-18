@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+<title id="title">Victor Silva Lopes — portfólio profissional</title>
+<desc id="desc">Cabeçalho com estética institucional de banco digital: azul-marinho, branco quente e dourado, com monograma VSL e cartão de identidade profissional.</desc>
+<defs><pattern id="lines" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><path d="M0 0V18" stroke="#CBB486" stroke-opacity=".065"/></pattern></defs>
+<rect x="1" y="1" width="1278" height="378" rx="22" fill="#0C2037" stroke="#34465C"/>
+<path d="M38 74H1242" stroke="#34465C"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+  <rect x="38" y="23" width="31" height="31" rx="9" fill="#CBB486"/>
+  <path d="M46 32l7 13 8-13" fill="none" stroke="#0C2037" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="83" y="44" fill="#F6F2E9" font-size="16" font-weight="700" letter-spacing="2.5">VSL</text>
+  <text x="145" y="44" fill="#BAC5D1" font-size="11" letter-spacing="2">PORTFÓLIO PROFISSIONAL</text>
+  <text x="1238" y="44" fill="#CBB486" text-anchor="end" font-size="11" letter-spacing="2">SISTEMAS / SOFTWARE</text>
+  <text x="55" y="119" fill="#CBB486" font-size="11" font-weight="600" letter-spacing="3.2">TECNOLOGIA COM CONTEXTO</text>
+</g>
+<g font-family="Georgia,Times New Roman,serif" font-size="54" fill="#F6F2E9">
+  <text x="52" y="189">Tecnologia aplicada.</text>
+  <text x="52" y="250">Operação em foco.</text>
+</g>
+<g font-family="Segoe UI,Arial,sans-serif">
+  <text x="55" y="297" fill="#C3CED9" font-size="17">Análise de sistemas · Dados · Desenvolvimento</text>
+  <path d="M55 330H718" stroke="#34465C"/>
+  <text x="55" y="353" fill="#BAC5D1" font-size="11" letter-spacing="1.8">VICTOR SILVA LOPES</text>
+  <text x="718" y="353" fill="#BAC5D1" text-anchor="end" font-size="11" letter-spacing="1.8">BRASIL / BRAZIL</text>
+  <rect x="802" y="99" width="426" height="253" rx="20" fill="#F3EFE6"/>
+  <rect x="1065" y="100" width="162" height="251" rx="19" fill="url(#lines)"/>
+  <text x="830" y="132" fill="#58616D" font-size="10" letter-spacing="2.1">IDENTIDADE PROFISSIONAL</text>
+  <path d="M1174 120l9 17 10-17" fill="none" stroke="#8B7045" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="830" y="186" fill="#10243C" font-size="29" font-weight="700" letter-spacing="-.5">Victor Silva Lopes</text>
+  <text x="830" y="214" fill="#3D526A" font-size="17">Analista de Sistemas II</text>
+  <path d="M830 238H1197" stroke="#D4CABB"/>
+  <text x="830" y="266" fill="#3D526A" font-size="13">Oracle SQL/PLSQL · Soul MV</text>
+  <text x="830" y="289" fill="#3D526A" font-size="13">Sustentação N2/N3 · Back-end</text>
+  <text x="830" y="329" fill="#58616D" font-size="10" letter-spacing="1.4">EXPERIÊNCIA &amp; PROJETOS</text>
+  <path d="M1176 323h19m-6-6 6 6-6 6" fill="none" stroke="#8B7045" stroke-width="1.6"/>
+</g>
+</svg>
