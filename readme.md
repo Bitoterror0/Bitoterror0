@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/profile/systems-banner.svg" width="1200" alt="Identidade visual de Victor Silva Lopes, com conexões entre dados, sistemas e aplicações.">
+  <img src="assets/profile/banking/hero.svg" width="1200" alt="Victor Silva Lopes — portfólio profissional com identidade em azul-marinho, branco quente e dourado.">
 </p>
 
 # Victor Silva Lopes
@@ -8,7 +8,16 @@
 
 Conecto a operação hospitalar ao desenvolvimento de soluções: investigo incidentes, desenvolvo consultas e relatórios e apoio a continuidade das aplicações. Também construo APIs com **Node.js e Express** em projetos freelance.
 
-[**Explorar projetos ↓**](#projetos-selecionados) · [**Currículo em português ↗**](docs/downloads/curriculo-victor.pdf) · [**English résumé ↗**](docs/downloads/resume-international.pdf) · [**Conversar no LinkedIn ↗**](https://www.linkedin.com/in/victor-silva-lopes/)
+## Acessos rápidos
+
+<p align="center">
+  <a href="#projetos-selecionados"><img src="assets/profile/banking/projetos.svg" width="194" alt="Projetos — explorar código e documentação"></a>
+  <a href="#experiência-e-foco"><img src="assets/profile/banking/experiencia.svg" width="194" alt="Experiência — conhecer trajetória e atuação"></a>
+  <a href="docs/downloads/curriculo-victor.pdf"><img src="assets/profile/banking/curriculo.svg" width="194" alt="Currículo — abrir PDF em português"></a>
+  <a href="https://www.linkedin.com/in/victor-silva-lopes/"><img src="assets/profile/banking/contato.svg" width="194" alt="Contato — conversar no LinkedIn"></a>
+</p>
+
+[Projetos](#projetos-selecionados) · [Experiência](#experiência-e-foco) · [Currículo PT](docs/downloads/curriculo-victor.pdf) · [English résumé](docs/downloads/resume-international.pdf) · [LinkedIn](https://www.linkedin.com/in/victor-silva-lopes/)
 
 Brasil · Remoto e híbrido conforme localização · CLT ou PJ · Inglês intermediário
 
