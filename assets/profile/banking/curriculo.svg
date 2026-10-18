@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-labelledby="title">
+<title id="title">Currículo — PDF em português</title>
+<rect x="1" y="1" width="298" height="168" rx="19" fill="#F3EFE6" stroke="#D4CABB" stroke-width="2"/>
+<rect x="22" y="21" width="41" height="41" rx="12" fill="#E4D8C2"/>
+<g transform="translate(30 29)" fill="none" stroke="#354A5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h11l6 6v18H5zM16 1v7h6M9 13h9M9 18h9"/></g>
+<path d="M253 32h19m-6-6 6 6-6 6" fill="none" stroke="#8B7045" stroke-width="1.8"/>
+<text x="23" y="107" fill="#10243C" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="650" letter-spacing="-.5">Currículo</text>
+<text x="24" y="139" fill="#4F6072" font-family="Segoe UI,Arial,sans-serif" font-size="17">PDF em português</text>
+</svg>
