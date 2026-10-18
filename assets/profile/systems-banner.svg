@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-labelledby="title desc">
+  <title id="title">Victor Silva Lopes — Sistemas, dados e continuidade</title>
+  <desc id="desc">Identidade visual em azul escuro, ciano e verde, com conexões geométricas entre dados, sistemas e APIs. Analista de Sistemas II, Oracle SQL/PLSQL, Soul MV e sustentação N2/N3.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091625"/><stop offset="1" stop-color="#0E2032"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#67E8F9"/><stop offset="1" stop-color="#A7F3D0"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#82B7D5" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="1280" height="340" rx="20" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1278" height="338" rx="19" fill="none" stroke="#244257"/>
+  <rect x="800" y="1" width="479" height="338" rx="19" fill="url(#grid)"/>
+  <path d="M48 48h28M48 48v28M1232 292h-28M1232 292v-28" fill="none" stroke="#67E8F9" stroke-width="2"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="80" y="57" fill="#9AB6CC" font-size="12" font-weight="600" letter-spacing="3">VSL / SYSTEMS &amp; SOFTWARE</text>
+    <text x="62" y="135" fill="#F1F7FC" font-size="54" font-weight="700" letter-spacing="-1.6">Victor Silva Lopes</text>
+    <text x="65" y="180" fill="#B9CEDF" font-size="25" letter-spacing=".3">Sistemas. Dados. Continuidade.</text>
+    <g font-size="13" font-weight="600" letter-spacing="1">
+      <rect x="64" y="218" width="194" height="34" rx="8" fill="#132D40" stroke="#2A5065"/>
+      <text x="81" y="240" fill="#8CEAF5">ORACLE SQL / PLSQL</text>
+      <rect x="270" y="218" width="116" height="34" rx="8" fill="#132D40" stroke="#2A5065"/>
+      <text x="293" y="240" fill="#B5EFD7">SOUL MV</text>
+      <rect x="398" y="218" width="174" height="34" rx="8" fill="#132D40" stroke="#2A5065"/>
+      <text x="416" y="240" fill="#C8DCEB">SUPORTE N2 / N3</text>
+    </g>
+    <path d="M65 282h690" stroke="#244257"/>
+    <text x="65" y="308" fill="#9AB6CC" font-size="12" letter-spacing="2.2">ANÁLISE DE SISTEMAS</text>
+    <text x="755" y="308" fill="#9AB6CC" text-anchor="end" font-size="12" letter-spacing="2.2">BRASIL / BRAZIL</text>
+    <g fill="none" stroke="#315A70" stroke-width="1.4">
+      <path d="M879 105h70l42 65h98M879 235h70l42-65M1090 170l49-65h61M1090 170l49 65h61"/>
+      <circle cx="1035" cy="170" r="63" stroke-dasharray="4 9"/>
+      <circle cx="1035" cy="170" r="87" stroke-opacity=".4"/>
+    </g>
+    <g fill="#102A3C" stroke="#3B647A">
+      <rect x="815" y="85" width="106" height="40" rx="9"/>
+      <rect x="815" y="215" width="106" height="40" rx="9"/>
+      <rect x="1135" y="85" width="94" height="40" rx="9"/>
+      <rect x="1135" y="215" width="94" height="40" rx="9"/>
+    </g>
+    <g fill="#BCD5E6" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">
+      <text x="868" y="110">DADOS</text><text x="868" y="240">SISTEMAS</text>
+      <text x="1182" y="110">APIS</text><text x="1182" y="240">OPERAÇÃO</text>
+    </g>
+    <circle cx="1035" cy="170" r="40" fill="#0A1E2F" stroke="#588A9D"/>
+    <path d="M1015 153l20 35 21-35" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#A7F3D0"><circle cx="948" cy="105" r="3"/><circle cx="991" cy="170" r="3"/><circle cx="1139" cy="235" r="3"/></g>
+  </g>
+</svg>
