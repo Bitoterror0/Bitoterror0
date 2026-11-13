@@ -111,6 +111,7 @@ button{max-width:100%}
 </header>
 <nav aria-label="Seções do portal">
   <ul class="atalhos-portal">
+    <li><a href="#t-intro">Guia do portal</a></li>
     <li><a href="#t-pedagogico">Planejamento e acompanhamento</a></li>
     <li><a href="#t1">Nova ficha de avaliação</a></li>
     <li><a href="#t2">Fichas guardadas</a></li>
@@ -148,6 +149,19 @@ button{max-width:100%}
   </div>
 </section>
 <main id="aplicativo" tabindex="-1"><h2 id="conteudo-principal" class="so-leitor" tabindex="-1">Conteúdo principal</h2>
+<section id="intro" aria-labelledby="t-intro">
+  <h2 id="t-intro" tabindex="-1">Guia do portal</h2>
+  <p>Ouça ou leia o que dá para fazer no portal. A leitura em voz alta começa quando você aciona o botão.</p>
+  <div class="botoes">
+    <button type="button" id="btn-intro" class="principal" aria-keyshortcuts="Alt+Shift+I">Ouvir guia do portal</button>
+    <button type="button" id="btn-intro-pular">Ir para planejamento</button>
+  </div>
+  <p id="intro-parte" class="suave" hidden></p>
+  <details id="intro-texto">
+    <summary>Ler o guia por escrito</summary>
+    <ol id="intro-lista"></ol>
+  </details>
+</section>
 <section aria-labelledby="t-pedagogico">
   <h2 id="t-pedagogico" tabindex="-1">Planejamento e acompanhamento</h2>
   <p>Crie planos de aula, organize a agenda, registre o acompanhamento e prepare materiais para leitura. Os registros ficam neste navegador. Use as iniciais ou um código para identificar educandos.</p>
@@ -214,19 +228,6 @@ button{max-width:100%}
     <button type="button" id="btn-nome-ini" class="principal">Guardar meu nome</button>
     <button type="button" id="btn-nome-nao">Agora não</button>
   </div>
-</section>
-<section id="intro" aria-labelledby="t-intro">
-  <h2 id="t-intro" tabindex="-1">Como preencher as fichas de avaliação</h2>
-  <p class="suave">Uma explicação curta de cada passo, com cerca de dois minutos.</p>
-  <div class="botoes">
-    <button type="button" id="btn-intro" class="grande" aria-keyshortcuts="Alt+Shift+I" hidden>Ouvir a explicação em voz</button>
-    <button type="button" id="btn-intro-pular">Pular para a nova ficha</button>
-  </div>
-  <p id="intro-parte" class="suave" hidden></p>
-  <details id="intro-texto">
-    <summary>Ler a explicação por escrito</summary>
-    <ol id="intro-lista"></ol>
-  </details>
 </section>
 <section aria-labelledby="t1">
   <h2 id="t1" tabindex="-1"><span class="numero">1</span>Nova ficha de avaliação</h2>
@@ -500,7 +501,7 @@ const guarda = {
   pôr(k, v) { if (modoBanco && temporarias.has(k)) { memoria.set(k, v); return true; } try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
   tirar(k) { if (modoBanco && temporarias.has(k)) { memoria.delete(k); return; } try { localStorage.removeItem(k); } catch {} },
 };
-const prefs = Object.assign({ tamanho: "g", cores: "auto", velocidade: "1", sons: true, falar: false, passo: true, nome: "", perguntouNome: false, viuIntro: false }, guarda.ler(K.prefs) || {});
+const prefs = Object.assign({ tamanho: "g", cores: "auto", velocidade: "1", sons: true, falar: false, passo: true, nome: "", perguntouNome: false }, guarda.ler(K.prefs) || {});
 function aplicarPrefs() {
   const r = document.documentElement;
   r.dataset.tamanho = prefs.tamanho;
@@ -523,7 +524,7 @@ function guardarNome(bruto, origem) {
   guarda.pôr(K.prefs, prefs); mostrarSaudacao();
   if (prefs.nome) avisar(`${saudacao()}! Prazer. Vou chamar você de ${prefs.nome}.` + (r.tirados.length ? ` Tirei do nome o que não é letra: ${r.tirados.join(" ")}.` : ""));
   else avisar(origem === "nao" ? "Tudo bem. Você pode pôr seu nome depois, em Ajustes." : "Nome apagado. A saudação fica sem nome.");
-  if (origem !== "ajustes") { $("t-intro").focus(); oferecerIntro(); }
+  if (origem !== "ajustes") { $("t-intro").focus(); }
 }
 function ligarPrefs() {
   $("btn-nome-ini").onclick = () => { if (!$("nome-ini").value.trim()) { avisar("Escreva seu nome no campo, ou aperte Agora não.", "erro"); $("nome-ini").focus(); return; } guardarNome($("nome-ini").value, "ini"); };
@@ -1153,7 +1154,7 @@ function ditadoNavegador() {
   };
 }
 function pintarVoz() { $("btn-parar-voz").hidden = !falando; }
-function pararVoz() { const era = falando; try { voz && voz.stop(); } catch {} falando = false; pintarVoz(); return era; }
+function pararVoz() { const era = falando; pararGuia?.(); vezFala++; try { voz && voz.stop(); } catch {} falando = false; pintarVoz(); return era; }
 let vezFala = 0;
 function falarTexto(linhas, meu) {
   if (!voz) return Promise.resolve(false);
@@ -1163,7 +1164,7 @@ function falarTexto(linhas, meu) {
   let p; try { p = Promise.resolve(voz.speak(arr, o)); } catch (e) { p = Promise.reject(e); }
   return p.then(() => { if (minha === vezFala) { falando = false; pintarVoz(); } return minha === vezFala; }, (e) => {
     if (minha === vezFala) { falando = false; pintarVoz(); }
-    if (e && e.code === "not_granted") { voz = vozNavegador(); if (!voz) { $("btn-ouvir-ed").hidden = true; $("btn-intro").hidden = true; desenharLista(); } }
+    if (e && e.code === "not_granted") { voz = vozNavegador(); if (!voz) { $("btn-ouvir-ed").hidden = true; desenharLista(); } }
     return false;
   });
 }
@@ -1175,9 +1176,9 @@ function ouvir(f) {
   falarTexto(textoFicha(f));
 }
 $("btn-ouvir-ed").onclick = () => { if (editando) ouvir(lerEditor()); };
-$("btn-parar-voz").onclick = () => { const eraIntro = emIntro; pararVoz(); if (!eraIntro) avisar("Voz parada."); $("btn-repetir").focus(); };
+$("btn-parar-voz").onclick = () => { const eraIntro = emIntro; pararVoz(); if (!eraIntro) avisar("Voz parada."); $(eraIntro ? "btn-intro" : "btn-repetir").focus(); };
 function ligarVoz(v) {
-  voz = v; document.dispatchEvent(new Event("portal-voz-disponivel")); $("btn-ouvir-ed").hidden = false; $("btn-intro").hidden = false; desenharLista(); }
+  voz = v; document.dispatchEvent(new Event("portal-voz-disponivel")); $("btn-ouvir-ed").hidden = false; desenharLista(); }
 
 function botoesDitado() { return document.querySelectorAll(".btn-ditar"); }
 function pintarDitado() {
@@ -1558,45 +1559,67 @@ $("arq-copia").onchange = async () => {
 /* ---------- explicação em voz de como o site funciona ---------- */
 function partesIntro() {
   return [
-    `${saudacao()}! Esta explicação mostra como preparar as fichas de avaliação de 2026. Você conta como foi o trabalho com cada aluno, o site monta a ficha e permite exportar no formato que você escolher. A explicação tem seis partes. Para interromper, use o botão Parar a voz, no alto da página, ou a tecla Esc.`,
-    "Parte 1: nova ficha. Há dois jeitos de começar. No primeiro, o site faz dez perguntas, uma por vez, como nome, dias da semana e resultado. Você responde e aperta Enter para ir à próxima. No segundo, você conta tudo de uma vez, com suas palavras, e aperta Montar ficha. O site separa as informações e preenche a ficha sozinho.",
-    "Parte 2: falar em vez de digitar. Onde houver o botão Falar, o microfone escreve o que você disser. Nas perguntas de marcar, basta dizer as opções, por exemplo: segunda e quarta. Dizer só a palavra próxima passa para a pergunta seguinte. Se o botão Falar não aparecer, o microfone do teclado do celular, ou a tecla Windows mais H no computador, fazem o mesmo.",
-    "Parte 3: conferir e salvar. Antes de salvar, o site confere a ficha. Se faltar o nome, o dia, o resultado ou a justificativa, ele avisa e leva você até a pergunta que falta. O site sempre pergunta antes de apagar, de trocar ou de fechar sem salvar. E o que você escreve fica guardado, mesmo se a página fechar.",
-    "Parte 4: fichas guardadas. No passo 2 fica a lista de alunos, em ordem alfabética. Cada ficha diz se está completa ou o que falta. Em cada uma há quatro botões: Editar, Ouvir, que lê a ficha em voz alta, Exportar, que permite escolher o formato daquela ficha, e Apagar. Se apagar por engano, o botão Desfazer traz a ficha de volta.",
-    "Parte 5: exportar e inserir documentos. Escolha Word, PDF, LibreOffice, Excel, CSV, texto ou HTML. Para PDF, escolha Salvar como PDF na janela de impressão. Em Inserir documentos, escolha arquivos de até 10 megabytes e use Guardar documentos selecionados. Para aproveitar o texto de um documento compatível, use o botão Usar texto na ficha e revise o texto antes de montar.",
-    "Parte 6: ajuda. Os avisos ficam escritos no alto da página e são anunciados pelo leitor de telas. O botão Repetir o último aviso fala de novo. Em Ajustes, você muda o tamanho da letra, as cores e a velocidade da voz. Em Cópia de segurança, você guarda todas as fichas em um arquivo. As fichas ficam guardadas neste aparelho. Fim da explicação.",
+    "Bem-vinda ou bem-vindo ao Portal Educacional Acessível, projeto para a ADEVIRP. Este guia explica as áreas e como começar. Para interromper a leitura, use o botão Parar leitura do guia ou a tecla Escape.",
+    "Navegação. Use Tab para avançar entre os controles, Shift mais Tab para voltar e Enter para ativar links e botões. No início da página, o link Pular para o conteúdo principal leva ao guia. O menu Seções do portal leva direto à área que você escolher.",
+    "Planejamento. Em Novo plano de aula, registre objetivos, etapas, recursos de acessibilidade e avaliação. Em Novo compromisso, informe a data e descreva horário, local ou link. Quando terminar, edite o compromisso e marque como concluído.",
+    "Diário pedagógico e materiais. Em Nova anotação pedagógica, registre o que foi trabalhado, o progresso e o próximo passo. Em Novo material de aula, escreva uma atividade, cole uma transcrição, descreva uma imagem ou acrescente um link. Use turma, iniciais ou código para identificar educandos.",
+    "Registros guardados. Busque por título, turma ou palavra do conteúdo e filtre pelo tipo de registro. Abra Ler conteúdo para consultar o texto. Você pode editar, remover, baixar em texto simples e, quando houver voz disponível, ouvir o registro. A área tem uma cópia de segurança em JSON que também pode ser restaurada.",
+    "Fichas de avaliação. Em Nova ficha de avaliação, responda às perguntas uma por vez ou conte como foi a aula e use Montar ficha. Onde houver o botão Falar, você pode usar o microfone. Se preferir, use o ditado do teclado do aparelho. Confira os campos, corrija o que faltar e selecione Salvar ficha.",
+    "Fichas guardadas e exportação. Você pode revisar, editar, ouvir, remover ou exportar uma ficha. Para exportar todas juntas, use Exportar todas as fichas. Escolha Word, LibreOffice Writer, Excel, CSV, texto, HTML ou PDF. Para PDF, escolha Salvar como PDF na janela de impressão. O portal avisa se houver fichas incompletas.",
+    "Documentos. Escolha arquivos de até dez megabytes por arquivo e selecione Guardar documentos selecionados. Para trazer texto de um Word D O C X, O D T ou arquivo de texto compatível, use Usar texto na ficha. Revise o texto antes de montar. PDFs e outros formatos podem ser guardados e baixados.",
+    "Acessibilidade. Em Recursos de acessibilidade, consulte o guia para preparar materiais e as referências de braile, DOSVOX, NVDA e TalkBack. Em Ajustes, mude o tamanho da letra, o contraste e a velocidade da voz. Você também pode ligar a leitura em voz alta dos avisos. Se já usa leitor de tela, deixe essa leitura adicional desligada para evitar avisos duplicados.",
+    "Armazenamento. Nesta versão, os registros ficam no navegador usado. As fichas e os registros pedagógicos têm cópias de segurança próprias. Baixe os documentos separadamente para ter uma cópia deles. Para começar, selecione Ir para planejamento ou escolha outra área no menu. Você pode voltar a este guia a qualquer momento.",
   ];
 }
-function escreverIntro() { const ol = $("intro-lista"); ol.textContent = ""; for (const t of partesIntro()) { const li = document.createElement("li"); li.textContent = t; ol.append(li); } }
-function irParaCadastro(msg) { prefs.viuIntro = true; guarda.pôr(K.prefs, prefs); $("btn-guiado").focus(); avisar(msg || "Vamos ao cadastro. Escolha: responder perguntas, uma por vez, ou contar tudo de uma vez.", "quieto"); }
+function escreverIntro() {
+  const lista = $("intro-lista");
+  for (const texto of partesIntro()) {
+    const item = document.createElement("li");
+    item.textContent = texto;
+    lista.append(item);
+  }
+}
+
+function abrirGuiaEscrito() {
+  const guia = $("intro-texto");
+  guia.open = true;
+  guia.querySelector("summary").focus();
+}
+let pararGuia;
 async function tocarIntro() {
-  if (!voz) { $("intro-texto").open = true; $("intro-texto").querySelector("summary").focus(); avisar("A voz não está disponível neste aparelho. A explicação está escrita logo abaixo, para ler com o leitor de telas.", "erro"); return; }
   if (emIntro) { pararVoz(); return; }
+  if (!voz) {
+    abrirGuiaEscrito();
+    avisar("A voz está indisponível. O guia por escrito está aberto.", "erro");
+    return;
+  }
   if (falando) pararVoz();
   if (ouvindo) pararDitado();
-  emIntro = true; const b = $("btn-intro"); b.textContent = "Parar a explicação"; b.setAttribute("aria-pressed", "true");
-  registrar("Tocando a explicação em voz.");
-  $("intro-parte").hidden = false; $("intro-parte").textContent = "Tocando a explicação. Para parar, use o botão Parar a explicação, o botão Parar a voz no alto da página, ou a tecla Esc.";
-  const terminou = await falarTexto(partesIntro(), true);
-  emIntro = false; b.textContent = "Ouvir a explicação em voz"; b.setAttribute("aria-pressed", "false"); $("intro-parte").hidden = true;
-  if (!terminou) { avisar("Explicação parada. Para ouvir de novo, use o botão Ouvir a explicação em voz."); $("btn-intro").focus(); return; }
-  const r = await perguntar("Fim da explicação", "Quer ouvir a explicação de novo ou continuar com o cadastro das fichas?", [
-    { rotulo: "Continuar com o cadastro", valor: "seguir", principal: true, sair: true }, { rotulo: "Ouvir a explicação de novo", valor: "de-novo" }]);
-  if (r === "de-novo") tocarIntro(); else irParaCadastro();
-}
-async function oferecerIntro() {
-  if (prefs.viuIntro) return;
-  const r = await perguntar("Quer conhecer o site?", "Posso explicar como cada passo funciona. Leva cerca de dois minutos.", [
-    ...(voz ? [{ rotulo: "Ouvir a explicação em voz", valor: "voz", principal: true }] : []),
-    { rotulo: "Ler a explicação por escrito", valor: "ler" },
-    { rotulo: "Pular e começar o cadastro", valor: "pular", sair: true }]);
-  prefs.viuIntro = true; guarda.pôr(K.prefs, prefs);
-  if (r === "voz") tocarIntro();
-  else if (r === "ler") { $("intro-texto").open = true; $("intro-texto").querySelector("summary").focus(); avisar("A explicação está aberta. Leia com as setas. Depois, o botão Pular para a nova ficha leva ao cadastro.", "quieto"); }
-  else irParaCadastro();
+  const botao = $("btn-intro");
+  const status = $("intro-parte");
+  emIntro = true;
+  botao.textContent = "Parar leitura do guia";
+  status.hidden = false;
+  status.textContent = "Leitura do guia em andamento. Use Parar leitura do guia ou Escape para interromper.";
+  const interrupcao = new Promise((resolver) => { pararGuia = () => resolver("interrompida"); });
+  const resultado = await Promise.race([interrupcao, falarTexto(partesIntro(), true)]);
+  pararGuia = null;
+  emIntro = false;
+  botao.textContent = "Ouvir guia do portal";
+  status.hidden = true;
+  if (resultado === false) {
+    pararVoz();
+    abrirGuiaEscrito();
+    avisar("Não foi possível concluir a leitura em voz alta. O guia por escrito está aberto.", "erro");
+  } else {
+    avisar(resultado === "interrompida" ? "Leitura do guia interrompida." : "Fim do guia.", "quieto");
+  }
 }
 $("btn-intro").onclick = tocarIntro;
-$("btn-intro-pular").onclick = () => { if (emIntro) pararVoz(); irParaCadastro(); };
+$("btn-intro-pular").onclick = () => {
+  if (emIntro) pararVoz();
+  $("t-pedagogico").focus();
+};
 
 /* ---------- atalhos ---------- */
 document.addEventListener("keydown", (e) => {
@@ -1645,7 +1668,7 @@ document.querySelector('nav[aria-label="Seções do portal"]').addEventListener(
 aplicarPrefs(); ligarPrefs(); aplicarModo(); iniciarLocal();
 $("fala").value = typeof guarda.ler(K.fala) === "string" ? guarda.ler(K.fala) : "";
 mostrarSaudacao(); escreverIntro();
-avisar(`${saudacao()}! ${fichas.length ? fichas.length + " fichas guardadas." : "Nenhuma ficha guardada ainda."} ` + (prefs.nome || prefs.perguntouNome ? "Aperte Tab para começar." : "Para começar, diga como quer ser chamada."), "quieto");
+avisar(`${saudacao()}! ${fichas.length ? fichas.length + " fichas guardadas." : "Nenhuma ficha guardada ainda."} ` + (prefs.nome || prefs.perguntouNome ? "O guia do portal está no início do conteúdo principal." : "Para conhecer o portal, use Ouvir guia do portal."), "quieto");
 (async () => {
   const r = guarda.ler(K.editor);
   if (r && typeof r === "object" && (r.nome || r.justificativa)) {
