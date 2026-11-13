@@ -100,10 +100,16 @@ button{max-width:100%}
 @media(max-width:22rem){.pagina{padding-inline:.6rem}section,details.bloco{padding:.7rem}.botoes{gap:.55rem}}
 @media(forced-colors:active){:focus-visible{outline-color:Highlight}.selo{forced-color-adjust:auto}}
 #scanner-video{width:100%;max-height:24rem;background:#101010;border:2px solid var(--linha);border-radius:.4rem}
+.atalhos-portal li,.campo,.botoes,main,section{min-width:0}
+button,input,select,textarea{max-inline-size:100%;min-inline-size:0}
+input[type=file]{width:100%;white-space:normal;overflow-wrap:anywhere}
+#dlg{width:min(36rem,calc(100vw - 1rem));max-height:calc(100dvh - 1rem);overflow:auto}
+#intro-parte:empty{margin-block:-.45rem;min-height:0}
+@media(max-width:22rem){dialog{padding:.6rem}.botoes button.grande{flex-basis:100%}}
 </style>
 </head>
 <body>
-<a class="pular" href="#conteudo-principal">Pular para o conteúdo principal</a>
+<a class="pular" href="#aplicativo">Pular para o conteúdo principal</a>
 <div class="pagina">
 <header>
   <p id="saudacao" style="font-size:1.25rem;font-weight:700"></p>
@@ -118,9 +124,10 @@ button{max-width:100%}
     <li><a href="#t2">Fichas guardadas</a></li>
     <li><a href="#t3">Exportar fichas</a></li>
     <li><a href="#t-documentos">Inserir documentos</a></li>
-    <li><a href="#t-scanner">Câmera e scanner</a></li>
+    <li><a href="#t-scanner">Câmera e scanner acessível</a></li>
     <li><a href="#t-leitor">Leitor de materiais</a></li>
     <li><a href="#t-internacional">Aplicativos e referências</a></li>
+    <li><a href="#leitores-portal">Ajuda com leitores de tela</a></li>
     <li><a href="#t-recursos">Recursos de acessibilidade</a></li>
     <li><a href="#ajustes-portal">Ajustes de acessibilidade</a></li>
   </ul>
@@ -152,7 +159,7 @@ button{max-width:100%}
     <button type="button" id="conta-sair">Sair</button>
   </div>
 </section>
-<main id="aplicativo" tabindex="-1"><h2 id="conteudo-principal" class="so-leitor" tabindex="-1">Conteúdo principal</h2>
+<main id="aplicativo" tabindex="-1">
 <section id="intro" aria-labelledby="t-intro">
   <h2 id="t-intro" tabindex="-1">Guia do portal</h2>
   <p>Ouça ou leia o que dá para fazer no portal. A leitura em voz alta começa quando você aciona o botão.</p>
@@ -160,7 +167,7 @@ button{max-width:100%}
     <button type="button" id="btn-intro" class="principal" aria-keyshortcuts="Alt+Shift+I">Ouvir guia do portal</button>
     <button type="button" id="btn-intro-pular">Ir para planejamento</button>
   </div>
-  <p id="intro-parte" class="suave" hidden></p>
+  <p id="intro-parte" class="suave" role="status" aria-atomic="true"></p>
   <details id="intro-texto">
     <summary>Ler o guia por escrito</summary>
     <ol id="intro-lista"></ol>
@@ -234,7 +241,7 @@ button{max-width:100%}
   </div>
 </section>
 <section aria-labelledby="t1">
-  <h2 id="t1" tabindex="-1"><span class="numero">1</span>Nova ficha de avaliação</h2>
+  <h2 id="t1" tabindex="-1"><span class="numero" aria-hidden="true">1</span>Nova ficha de avaliação</h2>
   <p>Há dois jeitos. Escolha o que preferir.</p>
   <button type="button" id="btn-guiado" class="grande principal" aria-keyshortcuts="Alt+Shift+N">Responder perguntas, uma por vez</button>
   <div class="campo">
@@ -267,7 +274,7 @@ button{max-width:100%}
 </section>
 
 <section aria-labelledby="t2">
-  <h2 id="t2" tabindex="-1"><span class="numero">2</span>Fichas guardadas</h2>
+  <h2 id="t2" tabindex="-1"><span class="numero" aria-hidden="true">2</span>Fichas guardadas</h2>
   <p id="contagem" class="suave"></p>
   <p id="estado-conta" class="suave" hidden></p>
   <div class="campo" id="campo-busca" hidden>
@@ -278,7 +285,7 @@ button{max-width:100%}
 </section>
 
 <section aria-labelledby="t3">
-  <h2 id="t3" tabindex="-1"><span class="numero">3</span>Exportar fichas</h2>
+  <h2 id="t3" tabindex="-1"><span class="numero" aria-hidden="true">3</span>Exportar fichas</h2>
   <p class="suave">Escolha o formato para todas as fichas. Para exportar uma só, use o botão Exportar na ficha desejada.</p>
   <button type="button" id="btn-word" class="grande principal" aria-keyshortcuts="Alt+Shift+B">Exportar todas as fichas</button>
 </section>
@@ -397,6 +404,17 @@ button{max-width:100%}
   </ul>
 </section>
 
+<details class="bloco" id="ajuda-leitores">
+  <summary id="leitores-portal">Usar com TalkBack, VoiceOver ou NVDA</summary>
+  <p>Os títulos, campos e botões podem ser lidos pelo leitor de tela do aparelho. A voz do portal é opcional. Em Ajustes, deixe a leitura dos avisos em voz alta desligada se o seu leitor de tela já anuncia as mensagens.</p>
+  <ul>
+    <li><strong>TalkBack no Android.</strong> No Chrome, deslize para explorar os controles e toque duas vezes para ativar o item em foco. Nos controles de leitura, use a opção de títulos para encontrar a área desejada. <a href="https://support.google.com/accessibility/android/answer/6006598?hl=pt-BR">Consultar o guia de navegação do TalkBack</a>.</li>
+    <li><strong>VoiceOver no iPhone ou iPad.</strong> No Safari, use o rotor para escolher títulos ou links e deslize para cima ou para baixo para percorrê-los. <a href="https://support.apple.com/pt-br/111796">Consultar o guia do rotor do VoiceOver</a>.</li>
+    <li><strong>NVDA no Windows.</strong> No modo de navegação, pressione H para o próximo título e Shift mais H para o anterior. Use Tab para percorrer links e controles. <a href="https://api.nvaccess.org/documentation/userGuide.html"><span lang="en">NVDA User Guide</span>, guia do NVDA em inglês</a>.</li>
+  </ul>
+  <p>Para começar sem liberar a câmera, abra <a href="#t-scanner">Câmera e scanner acessível</a> e escolha Experimentar sem câmera. Quando a leitura terminar, o foco vai para Resultado da leitura. Avance até Conteúdo reconhecido para revisar, ou até Ouvir resultado para usar a voz do portal.</p>
+</details>
+
 <details class="bloco" id="d-pref">
   <summary id="ajustes-portal">Ajustes de letra, cores, voz e sons</summary>
   <div class="campo"><label for="p-nome">Seu nome, para a saudação</label>
@@ -449,7 +467,7 @@ button{max-width:100%}
 </main>
 </div>
 
-<dialog id="dlg" role="alertdialog" aria-modal="true" aria-labelledby="dlg-t" aria-describedby="dlg-p">
+<dialog id="dlg" aria-modal="true" aria-labelledby="dlg-t" aria-describedby="dlg-p">
   <h2 id="dlg-t"></h2>
   <p id="dlg-p"></p>
   <div class="botoes" id="dlg-b"></div>
@@ -651,13 +669,22 @@ function avisar(msg, tipo) {
   const caixa = $("aviso"); caixa.className = tipo === "erro" ? "erro" : tipo === "andando" ? "andando" : "";
   $("aviso-texto").textContent = (tipo === "erro" ? "Atenção: " : "") + msg;
   const alvo = $(tipo === "erro" ? "vivo-urgente" : "vivo-calmo");
-  $("vivo-urgente").textContent = ""; $("vivo-calmo").textContent = "";
-  setTimeout(() => { alvo.textContent = msg; }, 80);
+  anunciar(msg, alvo);
   registrar(msg);
   if (tipo !== "quieto") som(tipo);
-  if (prefs.falar && !ouvindo && !emIntro) falarTexto(msg, true);
+  if (prefs.falar && !ouvindo && !falando && !emIntro) falarTexto(msg, true);
 }
-$("btn-repetir").onclick = () => { const m = ultimoAviso; $("vivo-calmo").textContent = ""; setTimeout(() => { $("vivo-calmo").textContent = m; }, 80); if (prefs.falar) falarTexto(m, true); };
+let temporizadorAviso;
+function anunciar(mensagem, alvo) {
+  clearTimeout(temporizadorAviso);
+  $("vivo-urgente").textContent = "";
+  $("vivo-calmo").textContent = "";
+  temporizadorAviso = setTimeout(() => { alvo.textContent = mensagem; }, 80);
+}
+$("btn-repetir").onclick = () => {
+  anunciar(ultimoAviso, $("vivo-calmo"));
+  if (prefs.falar) falarTexto(ultimoAviso, true);
+};
 
 /* ---------- perguntas de confirmação ---------- */
 function perguntar(titulo, texto, opcoes) {
@@ -669,7 +696,8 @@ function perguntar(titulo, texto, opcoes) {
     const fim = (v) => {
       if (feito) return; feito = true;
       try { d.close(); } catch { d.removeAttribute("open"); }
-      if (antes && document.contains(antes) && antes.offsetParent !== null) antes.focus();
+      if (voz && falando && prefs.falar) pararVoz();
+      if (antes instanceof HTMLElement && antes.isConnected && antes.getClientRects().length) antes.focus();
       resolve(v);
     };
     const sair = opcoes.find((o) => o.sair) || opcoes[opcoes.length - 1];
@@ -679,11 +707,6 @@ function perguntar(titulo, texto, opcoes) {
       bt.onclick = () => fim(o.valor); b.append(bt);
     }
     d.oncancel = (e) => { e.preventDefault(); fim(sair.valor); };
-    d.onkeydown = (e) => {
-      if (e.key !== "Tab") return;
-      const bs = [...b.querySelectorAll("button")], i = bs.indexOf(document.activeElement);
-      e.preventDefault(); bs[(i + (e.shiftKey ? -1 : 1) + bs.length) % bs.length].focus();
-    };
     registrar("Pergunta: " + titulo + " " + texto);
     som("pergunta");
     if (voz && falando) pararVoz();
@@ -1703,14 +1726,13 @@ async function tocarIntro() {
   const status = $("intro-parte");
   emIntro = true;
   botao.textContent = "Parar leitura do guia";
-  status.hidden = false;
   status.textContent = "Leitura do guia em andamento. Use Parar leitura do guia ou Escape para interromper.";
   const interrupcao = new Promise((resolver) => { pararGuia = () => resolver("interrompida"); });
   const resultado = await Promise.race([interrupcao, falarTexto(partesIntro(), true)]);
   pararGuia = null;
   emIntro = false;
   botao.textContent = "Ouvir guia do portal";
-  status.hidden = true;
+  status.textContent = "";
   if (resultado === false) {
     pararVoz();
     abrirGuiaEscrito();
@@ -1764,7 +1786,7 @@ window.iniciarPedagogico({
   ler: (chave) => guarda.ler(chave),
   gravar: (chave, valor) => guarda.pôr(chave, valor),
 });
-document.querySelector('nav[aria-label="Seções do portal"]').addEventListener("click", (evento) => {
+document.addEventListener("click", (evento) => {
   const link = evento.target.closest('a[href^="#"]');
   if (!link) return;
   const destino = document.getElementById(link.hash.slice(1));
