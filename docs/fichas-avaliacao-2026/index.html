@@ -106,7 +106,22 @@ kbd{border:2px solid var(--suave);border-radius:.3rem;padding:0 .3rem;font:inher
 <div class="so-leitor" id="vivo-calmo" role="status" aria-live="polite"></div>
 <div class="so-leitor" id="vivo-urgente" role="alert" aria-live="assertive"></div>
 
-<main>
+<section id="conta" aria-labelledby="conta-titulo" hidden>
+  <h2 id="conta-titulo">Acesso às fichas</h2>
+  <p id="conta-status" role="status"></p>
+  <form id="conta-form" hidden>
+    <div class="campo"><label for="conta-email">E-mail</label>
+      <input id="conta-email" type="email" autocomplete="username" required></div>
+    <div class="campo"><label for="conta-senha">Senha</label>
+      <input id="conta-senha" type="password" autocomplete="current-password" required></div>
+    <button type="submit" class="principal">Entrar</button>
+  </form>
+  <div id="conta-acoes" class="botoes" hidden>
+    <button type="button" id="conta-atualizar">Atualizar fichas</button>
+    <button type="button" id="conta-sair">Sair</button>
+  </div>
+</section>
+<main id="aplicativo">
 <section id="boas-vindas" aria-labelledby="t0" hidden>
   <h2 id="t0">Como você quer ser chamada?</h2>
   <div class="campo">
@@ -199,7 +214,7 @@ kbd{border:2px solid var(--suave);border-radius:.3rem;padding:0 .3rem;font:inher
 
 <details class="bloco">
   <summary>Cópia de segurança</summary>
-  <p>As fichas ficam guardadas neste navegador, neste aparelho. A cópia de segurança serve para não perder nada e para levar as fichas para outro aparelho.</p>
+  <p id="copia-dica">Use a cópia de segurança para exportar ou trazer fichas de outro aparelho.</p>
   <div class="botoes">
     <button type="button" id="btn-copia">Salvar cópia de segurança</button>
     <button type="button" id="btn-restaurar">Trazer fichas de uma cópia de segurança</button>
@@ -240,6 +255,8 @@ kbd{border:2px solid var(--suave);border-radius:.3rem;padding:0 .3rem;font:inher
   <div class="botoes" id="dlg-b"></div>
 </dialog>
 
+<script src="./banco-config.js"></script>
+<script src="./banco.js"></script>
 <script>/*!
 
 JSZip v3.10.1 - A JavaScript class for generating and reading zip files
@@ -356,10 +373,13 @@ const ROTULO_RESULTADO = { alcancado: "objetivo alcançado", parcial: "objetivo 
 
 /* ---------- ajustes ---------- */
 const K = { fichas: "fichas-2026", prefs: "fichas-2026-ajustes", fala: "fichas-2026-fala", editor: "fichas-2026-editor", apagadas: "fichas-2026-apagadas", sinc: "fichas-2026-na-conta" };
+const modoBanco = Boolean(window.FICHAS_BANCO?.url || window.FICHAS_BANCO?.chavePublicavel);
+const memoria = new Map();
+const temporarias = new Set([K.fichas, K.fala, K.editor, K.apagadas, K.sinc]);
 const guarda = {
-  ler(k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch { return null; } },
-  pôr(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
-  tirar(k) { try { localStorage.removeItem(k); } catch {} },
+  ler(k) { if (modoBanco && temporarias.has(k)) return memoria.get(k); try { return JSON.parse(localStorage.getItem(k) || "null"); } catch { return null; } },
+  pôr(k, v) { if (modoBanco && temporarias.has(k)) { memoria.set(k, v); return true; } try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
+  tirar(k) { if (modoBanco && temporarias.has(k)) { memoria.delete(k); return; } try { localStorage.removeItem(k); } catch {} },
 };
 const prefs = Object.assign({ tamanho: "g", cores: "auto", velocidade: "1", sons: true, falar: false, passo: true, nome: "", perguntouNome: false, viuIntro: false }, guarda.ler(K.prefs) || {});
 function aplicarPrefs() {
@@ -649,11 +669,17 @@ async function conferirRepetida(f) {
     { rotulo: "Voltar sem salvar", valor: "voltar", sair: true },
   ]);
   if (r === "voltar") return false;
-  if (r === "trocar") { const idAntigo = outra.id; if (f.id && f.id !== idAntigo) await apagar(f.id, true); f.id = idAntigo; }
+  if (r === "trocar") {
+    if (f.id && f.id !== outra.id) {
+      if (modoBanco) substituicoes.set(f, { id: f.id, versao: versoes.get(f.id) });
+      else await apagar(f.id, true);
+    }
+    f.id = outra.id;
+  }
   return true;
 }
 async function salvar() {
-  if (!editando) return;
+  if (!editando || (modoBanco && operacoes)) return;
   if (!conferirNome()) { irPasso(0, true); return; }
   const f = lerEditor();
   if (f.nome.split(" ").length < 2) {
@@ -669,6 +695,7 @@ async function salvar() {
   }
   if (!(await conferirRepetida(f))) { avisar("A ficha não foi salva. Ela continua aberta."); return; }
   const ok = await guardar(f);
+  if (modoBanco && !ok) return;
   fecharEditor();
   const resumo = `Ficha de ${f.nome} salva.` + (fl.length ? ` Ainda falta: ${dizFaltas(fl)}.` : " Está completa.") + ` São ${fichas.length} fichas guardadas.` + (ok ? "" : " Atenção: o navegador não deixou gravar. Salve uma cópia de segurança agora.");
   if (fila.length) {
@@ -700,12 +727,103 @@ $("btn-fechar").onclick = async () => {
 $("btn-guiado").onclick = () => { abrirEditor(fichaVazia()); avisar(prefs.passo ? `Ficha nova. São ${PASSOS.length} perguntas. Pergunta 1: nome do educando. Enter passa para a próxima.` : "Ficha nova aberta. Preencha e aperte Salvar ficha."); };
 
 /* ---------- guardar ---------- */
+const versoes = new Map();
+let contaAtiva = false;
+let operacoes = 0;
+async function operarBanco(operacao) {
+  if (!contaAtiva || operacoes) throw new Error("operação indisponível");
+  operacoes++;
+  try { return await operacao(); } finally { operacoes--; }
+}
+async function carregarBanco() {
+  const linhas = await window.FichasBanco.listar();
+  fichas = linhas.map(({ dados }) => normalizar(dados));
+  versoes.clear();
+  for (const { id, versao } of linhas) versoes.set(id, versao);
+  desenharLista();
+}
+async function iniciarBanco() {
+  const banco = window.FichasBanco;
+  const status = $("conta-status");
+  $("conta").hidden = false;
+  if (!banco) { status.textContent = "A configuração do banco precisa ser conferida."; return; }
+  const abrir = async () => {
+    await carregarBanco();
+    contaAtiva = true;
+    $("aplicativo").hidden = false;
+    $("conta-form").hidden = true;
+    $("conta-acoes").hidden = false;
+    status.textContent = "As fichas são salvas na sua conta.";
+  };
+  const login = $("conta-form");
+  login.onsubmit = async (evento) => {
+    evento.preventDefault();
+    if (login.querySelector("button").disabled) return;
+    login.querySelector("button").disabled = true;
+    try {
+      await banco.entrar($("conta-email").value.trim(), $("conta-senha").value);
+      await abrir();
+    } catch {
+      status.textContent = "Não foi possível abrir as fichas. Confira o login e a conexão e tente novamente.";
+    } finally {
+      $("conta-senha").value = "";
+      login.querySelector("button").disabled = false;
+    }
+  };
+  $("conta-atualizar").onclick = async () => {
+    if (editando || operacoes) { status.textContent = "Feche a ficha e aguarde as operações para atualizar."; return; }
+    $("aplicativo").inert = true;
+    try {
+      await operarBanco(carregarBanco);
+      ultimaApagada = null;
+      $("btn-desfazer").hidden = true;
+      status.textContent = "Fichas atualizadas.";
+    } catch { status.textContent = "Não foi possível atualizar. Tente de novo."; }
+    finally { $("aplicativo").inert = false; }
+  };
+  $("conta-sair").onclick = async () => {
+    if (editando || operacoes) { status.textContent = "Feche a ficha e aguarde as operações para sair."; return; }
+    $("aplicativo").inert = true;
+    contaAtiva = false;
+    try { await banco.sair(); location.reload(); }
+    catch {
+      contaAtiva = true;
+      $("aplicativo").inert = false;
+      status.textContent = "Não foi possível sair. Tente de novo ou feche a aba.";
+    }
+  };
+  try {
+    if (await banco.sessao()) { await abrir(); return; }
+    status.textContent = "Entre com a conta autorizada para acessar as fichas.";
+  } catch { status.textContent = "Não foi possível abrir a conta. Tente entrar novamente."; }
+  login.hidden = false;
+}
+
 let fichas = [], colecao = null, ultimaApagada = null;
 let apagadas = new Set(guarda.ler(K.apagadas) || []);
 const novoId = () => "f" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 const gravarLocal = () => guarda.pôr(K.fichas, { fichas, iniciado: true });
+const substituicoes = new WeakMap();
 async function guardar(f) {
   if (!f.id) f.id = novoId();
+  if (modoBanco) {
+    try {
+      await operarBanco(async () => {
+        const origem = substituicoes.get(f);
+        const versao = versoes.get(f.id);
+        const novaVersao = await window.FichasBanco.salvar(f, versao, origem);
+        if (origem) versoes.delete(origem.id);
+        versoes.set(f.id, novaVersao);
+        fichas = fichas.filter((x) => x.id !== f.id && x.id !== origem?.id);
+        fichas.push(f);
+        desenharLista();
+      });
+      return true;
+    } catch {
+      avisar("Não foi possível confirmar o salvamento no banco. Confira a conexão ou atualize a lista e verifique a ficha.", "erro");
+      return false;
+    }
+  }
   apagadas.delete(f.id); guarda.pôr(K.apagadas, [...apagadas]);
   const i = fichas.findIndex((x) => x.id === f.id);
   if (i >= 0) fichas[i] = f; else fichas.push(f);
@@ -715,17 +833,31 @@ async function guardar(f) {
 }
 async function apagar(id, semDesfazer) {
   const f = fichas.find((x) => x.id === id); if (!f) return;
+  if (modoBanco) {
+    try {
+      await operarBanco(async () => {
+        await window.FichasBanco.apagar(id, versoes.get(id));
+        versoes.delete(id);
+      });
+    } catch {
+      avisar("Não foi possível confirmar a exclusão. Atualize a lista para conferir a ficha.", "erro");
+      return false;
+    }
+  }
   fichas = fichas.filter((x) => x.id !== id);
   apagadas.add(id); guarda.pôr(K.apagadas, [...apagadas]);
   if (!semDesfazer) { ultimaApagada = f; const b = $("btn-desfazer"); b.textContent = `Desfazer: trazer de volta a ficha de ${f.nome || "aluno sem nome"}`; b.hidden = false; }
   gravarLocal(); desenharLista();
   sinc.delete(id); guarda.pôr(K.sinc, [...sinc]);
   if (colecao) colecao.doc(id).delete().catch(() => {});
+  return true;
 }
 $("btn-desfazer").onclick = async () => {
   if (!ultimaApagada) return;
-  const f = ultimaApagada; ultimaApagada = null; $("btn-desfazer").hidden = true;
-  await guardar(f); avisar(`Ficha de ${f.nome || "aluno sem nome"} trazida de volta. São ${fichas.length} fichas guardadas.`); $("t2").focus();
+  const f = ultimaApagada;
+  if (!(await guardar(f)) && modoBanco) return;
+  ultimaApagada = null; $("btn-desfazer").hidden = true;
+  avisar(`Ficha de ${f.nome || "aluno sem nome"} trazida de volta. São ${fichas.length} fichas guardadas.`); $("t2").focus();
 };
 function iniciarLocal() {
   const l = guarda.ler(K.fichas);
@@ -818,7 +950,8 @@ function desenharLista() {
       const ok = await perguntar("Apagar ficha", `Quer mesmo apagar a ficha de ${nome}?`, [{ rotulo: "Não apagar", valor: false, principal: true, sair: true }, { rotulo: "Sim, apagar", valor: true }]);
       if (!ok) { avisar("Nada foi apagado."); return; }
       if (editando && editando.id === f.id) fecharEditor();
-      await apagar(f.id); avisar(`Ficha de ${nome} apagada. Restam ${fichas.length}. O botão Desfazer, no alto da página, traz ela de volta.`);
+      if (!(await apagar(f.id))) return;
+      avisar(`Ficha de ${nome} apagada. Restam ${fichas.length}. O botão Desfazer, no alto da página, traz ela de volta.`);
       $("btn-desfazer").focus();
     }));
     li.append(h, p, bs); ul.append(li);
@@ -1080,9 +1213,9 @@ async function montar() {
   if (!novas) novas = montarSemIA(texto);
   ocupado = false; $("btn-montar").removeAttribute("aria-disabled");
   const guardadas = [];
-  for (const f of novas) { f.id = ""; f.atualizado = Date.now(); if (f.nome && !(await conferirRepetida(f))) continue; await guardar(f); guardadas.push(f); }
+  for (const f of novas) { f.id = ""; f.atualizado = Date.now(); if (f.nome && !(await conferirRepetida(f))) continue; if (await guardar(f) || !modoBanco) guardadas.push(f); }
   if (!guardadas.length) { avisar("Nenhuma ficha foi guardada. Seu texto continua no campo."); return; }
-  $("fala").value = ""; guarda.tirar(K.fala);
+  if (!modoBanco || guardadas.length === novas.length) { $("fala").value = ""; guarda.tirar(K.fala); }
   const p = guardadas[0], fl = faltas(p); fila = guardadas.slice(1).map((f) => f.id);
   abrirEditor(p, { passo: fl.length ? fl[0].passo : 0 });
   avisar((guardadas.length > 1 ? `${guardadas.length} fichas montadas e guardadas: ${guardadas.map((f) => f.nome || "sem nome").join("; ")}. Abri a primeira para conferir. ` : `Ficha de ${p.nome || "aluno sem nome"} montada e guardada. `)
@@ -1140,13 +1273,13 @@ $("arq-copia").onchange = async () => {
   const ok = await perguntar("Trazer fichas da cópia", `A cópia tem ${lista.length} fichas. Aqui há ${fichas.length} guardadas. Quando o mesmo aluno estiver nos dois lugares, fica a ficha mais recente. Quer trazer?`, [
     { rotulo: "Trazer as fichas", valor: true, principal: true }, { rotulo: "Não trazer", valor: false, sair: true }]);
   if (!ok) { avisar("Nada foi mudado."); return; }
-  let novas = 0, trocadas = 0;
+  let novas = 0, trocadas = 0, falhas = 0;
   for (const f of lista) {
     const igual = fichas.find((x) => x.id === f.id) || fichas.find((x) => mesmoNome(x.nome, f.nome));
-    if (!igual) { if (!f.id) f.id = novoId(); await guardar(f); novas++; }
-    else if (f.atualizado > igual.atualizado) { f.id = igual.id; await guardar(f); trocadas++; }
+    if (!igual) { if (!f.id) f.id = novoId(); if (await guardar(f) || !modoBanco) novas++; else falhas++; }
+    else if (f.atualizado > igual.atualizado) { f.id = igual.id; if (await guardar(f) || !modoBanco) trocadas++; else falhas++; }
   }
-  avisar(`Pronto. ${novas} fichas novas e ${trocadas} atualizadas. São ${fichas.length} fichas guardadas.`); $("t2").focus();
+  avisar(`Pronto. ${novas} fichas novas e ${trocadas} atualizadas. São ${fichas.length} fichas guardadas.` + (falhas ? ` ${falhas} sem confirmação no banco.` : "")); $("t2").focus();
 };
 
 /* ---------- explicação em voz de como o site funciona ---------- */
@@ -1194,6 +1327,7 @@ $("btn-intro-pular").onclick = () => { if (emIntro) pararVoz(); irParaCadastro()
 
 /* ---------- atalhos ---------- */
 document.addEventListener("keydown", (e) => {
+  if (modoBanco && (!contaAtiva || operacoes || $("aplicativo").inert)) return;
   if (e.key === "Escape" && !$("dlg").open) {
     if (falando) { const era = emIntro; pararVoz(); if (!era) avisar("Voz parada."); }
     if (ouvindo) pararDitado();
@@ -1233,7 +1367,12 @@ avisar(`${saudacao()}! ${fichas.length ? fichas.length + " fichas guardadas." : 
     if (ok) { abrirEditor(f, { mudou: true }); avisar(`Ficha de ${f.nome || "aluno sem nome"} aberta de novo. Confira e salve.`); } else guarda.tirar(K.editor);
   }
 })();
-if (window.claude && claude.use) {
+if (modoBanco) {
+  $("aplicativo").hidden = true;
+  const d = ditadoNavegador(); if (d) ligarDitado(d);
+  const v = vozNavegador(); if (v) ligarVoz(v);
+  iniciarBanco();
+} else if (window.claude && claude.use) {
   claude.use("downloads").then((x) => { downloads = x; }).catch(() => {});
   claude.use("sample").then((x) => { sample = x; }).catch(() => {});
   claude.use("dictation").then((x) => { if (x) ligarDitado(x); }).catch(() => {});
